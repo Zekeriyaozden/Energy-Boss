@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/modules.xml
+/.idea.PTM URP.iml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Users\Maleriya\Desktop\Pigeon Gaming\PTM URP\.idea\.idea.PTM URP\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
