@@ -10,6 +10,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
+    </changedPaths>
+  </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -50,7 +57,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1651227659050</updated>
-      <workItem from="1651227686393" duration="371000" />
+      <workItem from="1651227686393" duration="2248000" />
+      <workItem from="1651436686316" duration="5977000" />
     </task>
     <servers />
   </component>

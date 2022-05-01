@@ -168,6 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4425268246297175651}
   - component: {fileID: 4813369705022387618}
+  - component: {fileID: 8102390483922494949}
   m_Layer: 0
   m_Name: wind turbine animation
   m_TagString: Untagged
@@ -210,3 +211,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &8102390483922494949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3900793110722755801}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.90257263, y: 18.667603, z: 1.4636657}
+  m_Center: {x: -0.048713684, y: -8.833801, z: -2.3687747}

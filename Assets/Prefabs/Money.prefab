@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1389549816354350817}
   - component: {fileID: 2659225665866148164}
   - component: {fileID: 217158969110388110}
+  - component: {fileID: 526904085941378687}
+  - component: {fileID: 1143948273336585269}
   m_Layer: 0
   m_Name: Money
   m_TagString: Untagged
@@ -27,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1730363703027760219}
   m_LocalRotation: {x: 1, y: -0, z: 0, w: -0.00000019470718}
   m_LocalPosition: {x: -20.085224, y: 31.54, z: 58.1}
-  m_LocalScale: {x: 2.990448, y: 1.9718564, z: 2.990448}
+  m_LocalScale: {x: 13.403096, y: 8.935398, z: 13.403096}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -80,3 +82,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &526904085941378687
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730363703027760219}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12567163, y: 0.01777497, z: 0.05395077}
+  m_Center: {x: -0.0003358089, y: -0.008185027, z: -0.000022373308}
+--- !u!114 &1143948273336585269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730363703027760219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7d677677079b44687551c40710fad4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManeger: {fileID: 0}
+  size: 0.08
+  collectSize: 0
