@@ -3696,7 +3696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd7a98920698074292587f12cdc4714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyPopSpeed: 1
+  moneyPopSpeed: 0.31
   stopCourotine: 0
 --- !u!1001 &540530150
 PrefabInstance:
@@ -6823,7 +6823,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -10531,6 +10531,7 @@ MonoBehaviour:
   collectObj: {fileID: 2012036647}
   referanceObj: {fileID: 1048185506}
   startTransform: {fileID: 1048185511}
+  spendSpeed: 2.49
 --- !u!4 &1752014325
 Transform:
   m_ObjectHideFlags: 0
@@ -12724,7 +12725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0931ab5ed983d834194b64f225661ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isEnter: 0
+  target: {fileID: 0}
 --- !u!4 &684901674193478987
 Transform:
   m_ObjectHideFlags: 0

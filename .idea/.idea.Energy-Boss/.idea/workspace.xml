@@ -10,13 +10,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/CameraController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DenemeLerp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -61,7 +71,7 @@
       <updated>1651227659050</updated>
       <workItem from="1651227686393" duration="2248000" />
       <workItem from="1651436686316" duration="5977000" />
-      <workItem from="1651824350444" duration="3220000" />
+      <workItem from="1651824350444" duration="11450000" />
     </task>
     <servers />
   </component>

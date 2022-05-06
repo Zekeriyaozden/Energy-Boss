@@ -26,8 +26,6 @@ public class PlayerController : MonoBehaviour
             yield return new WaitForSeconds(moneyPopSpeed);
             GameObject.Find("GameManeger").GetComponent<GameManeger>().MoneySpend(tm);
         }
-
-        Debug.Log("CourIsFinished!!");
     }
 
 /*

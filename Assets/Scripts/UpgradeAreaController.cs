@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class UpgradeAreaController : MonoBehaviour
 {
-    public bool isEnter;
+    public Transform target;
     void Start()
     {
-        isEnter = false;
+        
     }
 
     // Update is called once per frame

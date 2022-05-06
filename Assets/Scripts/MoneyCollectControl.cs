@@ -28,7 +28,6 @@ public class MoneyCollectControl : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Collect");
         if (other.gameObject.tag == "Player")
         {
             if (collectSize >= 1)

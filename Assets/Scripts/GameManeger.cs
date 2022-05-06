@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class GameManeger : MonoBehaviour
 {
@@ -18,20 +20,25 @@ public class GameManeger : MonoBehaviour
     void Update()
     {
         collectSize = collectObj.transform.childCount;
+
+        void rsd(GameObject obj)
+        {
+            Debug.Log(obj.name);
+        }
     }
+
+
 
     public void MoneySpend(Transform target)
     {
-        GameObject obj = PopStack();
-        obj.transform.SetParent(null);
-        Vector3 moneyPos = obj.transform.position;
-        float fl = 0;
-        while (fl <= 1)
+        if (collectSize > 1)
         {
-            obj.transform.position = Vector3.Lerp(moneyPos, target.position, fl);
-            fl += spendSpeed * Time.deltaTime;
+            GameObject obj = PopStack();
+            obj.AddComponent<MoneyController>();
+            obj.GetComponent<MoneyController>().target = target;
+            obj.GetComponent<MoneyController>().spendSpeed = spendSpeed;
         }
-        
+
     }
 
     public GameObject PopStack()
