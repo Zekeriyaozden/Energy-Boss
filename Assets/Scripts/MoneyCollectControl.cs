@@ -31,16 +31,14 @@ public class MoneyCollectControl : MonoBehaviour
         Debug.Log("Collect");
         if (other.gameObject.tag == "Player")
         {
-            if (gameManeger.GetComponent<GameManeger>().objTemp != null)
+            if (collectSize >= 1)
             {
                 gameManeger.GetComponent<GameManeger>().PushStack(this.gameObject);
                 gameObject.transform.SetParent(gameManeger.GetComponent<GameManeger>().collectObj.transform);
-                gameObject.transform.localScale = gameManeger.GetComponent<GameManeger>().objTemp.transform.localScale;
-                gameObject.transform.position = (Vector3.up * size) + gameManeger.GetComponent<GameManeger>().objTemp.transform.position;
-                gameObject.transform.rotation = gameManeger.GetComponent<GameManeger>().objTemp.transform.rotation;
+                gameObject.transform.localScale = gameManeger.GetComponent<GameManeger>().referanceObj.transform.localScale;
+                gameObject.transform.position = ((Vector3.up * size) * collectSize) + gameManeger.GetComponent<GameManeger>().referanceObj.transform.position;
+                gameObject.transform.rotation = gameManeger.GetComponent<GameManeger>().referanceObj.transform.rotation;
                 gameObject.GetComponent<BoxCollider>().enabled = false;
-                gameManeger.GetComponent<GameManeger>().objTemp = gameObject;
-                
             }
         }
     }

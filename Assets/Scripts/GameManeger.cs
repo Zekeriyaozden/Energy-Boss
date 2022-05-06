@@ -7,7 +7,8 @@ public class GameManeger : MonoBehaviour
     public Stack<GameObject> moneyStack = new Stack<GameObject>();
     public int collectSize;
     public GameObject collectObj;
-    public GameObject objTemp;
+    public GameObject referanceObj;
+    public Transform startTransform;
     void Start()
     {
         collectSize = 0;
@@ -16,6 +17,7 @@ public class GameManeger : MonoBehaviour
     void Update()
     {
         collectSize = collectObj.transform.childCount;
+        
     }
 
     public GameObject PopStack()

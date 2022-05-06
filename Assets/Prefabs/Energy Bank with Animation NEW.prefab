@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6841721187600145534}
   - component: {fileID: 1402279275388625799}
+  - component: {fileID: -3817634520428122668}
   m_Layer: 0
   m_Name: Energy Bank with Animation NEW
   m_TagString: Untagged
@@ -85,3 +86,22 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.6169263, y: 1.7731051, z: -0.5627979}
     m_Extent: {x: 2.387714, y: 1.7876666, z: 1.9982888}
   m_DirtyAABB: 0
+--- !u!95 &-3817634520428122668
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6177106384125675204}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7d542e4bf2025aa47b1844ce4332bd4c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
