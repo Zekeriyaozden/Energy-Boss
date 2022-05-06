@@ -9,6 +9,7 @@ public class GameManeger : MonoBehaviour
     public GameObject collectObj;
     public GameObject referanceObj;
     public Transform startTransform;
+    public float spendSpeed;
     void Start()
     {
         collectSize = 0;
@@ -17,6 +18,19 @@ public class GameManeger : MonoBehaviour
     void Update()
     {
         collectSize = collectObj.transform.childCount;
+    }
+
+    public void MoneySpend(Transform target)
+    {
+        GameObject obj = PopStack();
+        obj.transform.SetParent(null);
+        Vector3 moneyPos = obj.transform.position;
+        float fl = 0;
+        while (fl <= 1)
+        {
+            obj.transform.position = Vector3.Lerp(moneyPos, target.position, fl);
+            fl += spendSpeed * Time.deltaTime;
+        }
         
     }
 

@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moneyPopSpeed;
     public bool stopCourotine;
+    private Transform tm;
     void Start()
     {
         stopCourotine = true;
@@ -15,10 +16,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.GetComponent<JoystickPlayerExample>().isMoving == true)
-        {
-            stopCourotine = true;
-        }
+
     }
 
     IEnumerator Upgrade()
@@ -26,24 +24,28 @@ public class PlayerController : MonoBehaviour
         while (stopCourotine == false)
         {
             yield return new WaitForSeconds(moneyPopSpeed);
-            Debug.Log("Waited");
+            GameObject.Find("GameManeger").GetComponent<GameManeger>().MoneySpend(tm);
         }
 
         Debug.Log("CourIsFinished!!");
     }
 
-    private void OnTriggerStay(Collider other)
+/*
+ *     private void OnTriggerStay(Collider other)
     {
         if (gameObject.GetComponent<JoystickPlayerExample>().isIdle == true)
         {
             stopCourotine = false;
         }
     }
+ */
 
     private void OnTriggerEnter(Collider other)
     {
+        tm = other.transform;
         if (other.tag == "Upgrade")
         {
+            stopCourotine = false;
             StartCoroutine("Upgrade");
         }
     }
