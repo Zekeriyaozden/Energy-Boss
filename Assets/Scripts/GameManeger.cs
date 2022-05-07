@@ -57,7 +57,6 @@ public class GameManeger : MonoBehaviour
 
     public void PushStack(GameObject money)
     {
-        Debug.Log("Pusshing " + money.name);
         moneyStack.Push(money);
     }
     

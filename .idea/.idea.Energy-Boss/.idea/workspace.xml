@@ -26,11 +26,11 @@
       <option value="$PROJECT_DIR$/Assets/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DenemeLerp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -76,7 +76,7 @@
       <workItem from="1651227686393" duration="2248000" />
       <workItem from="1651436686316" duration="5977000" />
       <workItem from="1651824350444" duration="11450000" />
-      <workItem from="1651909866294" duration="2226000" />
+      <workItem from="1651909866294" duration="3647000" />
     </task>
     <servers />
   </component>
