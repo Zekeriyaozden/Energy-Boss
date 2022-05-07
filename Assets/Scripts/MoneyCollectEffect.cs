@@ -44,7 +44,6 @@ public class MoneyCollectEffect : MonoBehaviour
         {
             if(flag)
             {
-                Debug.Log(collectSize);
                 gameObject.transform.position = referanceObj.transform.position + ((Vector3.up * 0.08f) * collectSize);
                 flag = false;
             }
