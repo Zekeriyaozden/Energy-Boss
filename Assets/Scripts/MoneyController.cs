@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoneyController : MonoBehaviour
 {
+    public GameObject upgradeUI;
     public Transform target;
     public float spendSpeed;
     private Vector3 tempPos1;
@@ -31,5 +32,11 @@ public class MoneyController : MonoBehaviour
             gameObject.transform.position = Vector3.Lerp(tempPos1, tempPos2, interpolate);
         }
 
+        if (interpolate == 1)
+        {
+            Debug.Log("cost-100");
+            target.gameObject.GetComponent<UpgradeAreaController>().cost-=100;
+        }
+        
     }
 }

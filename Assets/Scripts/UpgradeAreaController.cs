@@ -5,26 +5,22 @@ using UnityEngine;
 
 public class UpgradeAreaController : MonoBehaviour
 {
-    public Transform target;
+    public int cost;
+    public GameObject referanceObject;
+    public GameObject particle;
     void Start()
     {
-        
+        cost = 300;
     }
-
-    // Update is called once per frame
+    
+    
+    
     void Update()
     {
-        
+        if (cost <= 0)
+        {
+            Debug.Log(cost);
+        } 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        //isEnter = true;
-    }
-
-
-    private void OnTriggerExit(Collider other)
-    {
-        //isEnter = false;
-    }
 }

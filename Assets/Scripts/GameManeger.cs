@@ -34,7 +34,7 @@ public class GameManeger : MonoBehaviour
 
     public void MoneySpend(Transform target)
     {
-        if (collectSize > 1)
+        if (collectSize > 1 && target.gameObject.GetComponent<UpgradeAreaController>().cost>=0)
         {
             GameObject obj = PopStack();
             obj.AddComponent<MoneyController>();
