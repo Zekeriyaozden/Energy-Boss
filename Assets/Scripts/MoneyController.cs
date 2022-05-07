@@ -23,9 +23,13 @@ public class MoneyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        interpolate += spendSpeed * Time.deltaTime;
-        tempPos1 = Vector3.Lerp(moneyPos, tempObj, interpolate);
-        tempPos2 = Vector3.Lerp(tempObj, target.position , interpolate);
-        gameObject.transform.position = Vector3.Lerp(tempPos1, tempPos2, interpolate);
+        if (interpolate <= 1)
+        {
+            interpolate += spendSpeed * Time.deltaTime;
+            tempPos1 = Vector3.Lerp(moneyPos, tempObj, interpolate);
+            tempPos2 = Vector3.Lerp(tempObj, target.position , interpolate);
+            gameObject.transform.position = Vector3.Lerp(tempPos1, tempPos2, interpolate);
+        }
+
     }
 }

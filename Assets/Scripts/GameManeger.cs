@@ -8,6 +8,8 @@ public class GameManeger : MonoBehaviour
 {
     public Stack<GameObject> moneyStack = new Stack<GameObject>();
     public int collectSize;
+    [Range(0,5)]
+    public float collectSpeed;
     public GameObject collectObj;
     public GameObject referanceObj;
     public Transform startTransform;

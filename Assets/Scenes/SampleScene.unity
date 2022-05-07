@@ -3696,7 +3696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd7a98920698074292587f12cdc4714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyPopSpeed: 0.31
+  moneyPopSpeed: 0.15
   stopCourotine: 0
 --- !u!1001 &540530150
 PrefabInstance:
@@ -10528,6 +10528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectSize: 0
+  collectSpeed: 1.03
   collectObj: {fileID: 2012036647}
   referanceObj: {fileID: 1048185506}
   startTransform: {fileID: 1048185511}
@@ -11669,7 +11670,7 @@ PrefabInstance:
     - target: {fileID: 2185316410191658695, guid: f9256b0b5350ecd408bf54ac68129c1f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.89
+      value: 30.64
       objectReference: {fileID: 0}
     - target: {fileID: 2185316410191658695, guid: f9256b0b5350ecd408bf54ac68129c1f,
         type: 3}
@@ -11679,7 +11680,7 @@ PrefabInstance:
     - target: {fileID: 2185316410191658695, guid: f9256b0b5350ecd408bf54ac68129c1f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 28.25
+      value: 27.07
       objectReference: {fileID: 0}
     - target: {fileID: 2185316410191658695, guid: f9256b0b5350ecd408bf54ac68129c1f,
         type: 3}

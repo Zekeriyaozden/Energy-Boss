@@ -35,6 +35,7 @@
           <e p="CharacterControllerJoyistic.cs" t="Include" />
           <e p="GameManeger.cs" t="Include" />
           <e p="MoneyCollectControl.cs" t="Include" />
+          <e p="MoneyCollectEffect.cs" t="Include" />
           <e p="MoneyController.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="UpgradeAreaController.cs" t="Include" />
