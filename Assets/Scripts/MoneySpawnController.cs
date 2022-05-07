@@ -11,15 +11,12 @@ public class MoneySpawnController : MonoBehaviour
     public Vector3 tempPos2;
     public Vector3 thisPos;
     public float speed;
-    public int collectSize;
     private float interpolate;
     private bool flag;
     void Start()
     {
         gameObject.GetComponent<BoxCollider>().enabled = false;
         thisPos = gameObject.transform.position;
-        speed = GameObject.Find("GameManeger").GetComponent<GameManeger>().moneySpawnSpeed;
-        
     }
 
     // Update is called once per frame

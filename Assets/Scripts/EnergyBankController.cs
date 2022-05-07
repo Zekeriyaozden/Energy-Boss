@@ -8,16 +8,7 @@ public class EnergyBankController : MonoBehaviour
     public Transform parentObj;
     public float waitSeconds;
     public int moneyCount;
-    public Vector3 target1;
-    public Vector3 target2;
-    public Vector3 target3;
     public GameObject referanceObj;
-    public Vector3 tempObj1;
-    public Vector3 tempObj2;
-    public Vector3 tempObj3;
-    public Vector3 tempPos1;
-    public Vector3 tempPos2;
-    public Vector3 thisPos;
     public float speed;
     public int collectSize;
     private float interpolate;
@@ -35,7 +26,7 @@ public class EnergyBankController : MonoBehaviour
         while (flag)
         {
             yield return new WaitForSeconds(waitSeconds);
-        if (flag)
+        if (flag && moneyCount<collectSize )
         {
             if (moneyCount % 3 == 0)
             {
@@ -44,6 +35,7 @@ public class EnergyBankController : MonoBehaviour
                 gm.AddComponent<MoneySpawnController>();
                 gm.GetComponent<MoneySpawnController>().target = gameObject.transform.position + new Vector3(-1.8f,0,-3.621f) + ((Vector3.up * 0.2f) * num);
                 gm.GetComponent<MoneySpawnController>().tempObj = gm.GetComponent<MoneySpawnController>().target + new Vector3(0,5f,0);
+                gm.GetComponent<MoneySpawnController>().speed = speed;
                 //gameObject.z-4
                 //1 = gobj - 1.8
                 //2 = gobj
@@ -56,6 +48,7 @@ public class EnergyBankController : MonoBehaviour
                 gm.AddComponent<MoneySpawnController>();
                 gm.GetComponent<MoneySpawnController>().target = gameObject.transform.position + new Vector3(0,0,-3.621f) + ((Vector3.up * 0.2f) * num);
                 gm.GetComponent<MoneySpawnController>().tempObj = gm.GetComponent<MoneySpawnController>().target + new Vector3(0,5f,0);
+                gm.GetComponent<MoneySpawnController>().speed = speed;
             }
             else if (moneyCount % 3 == 2)
             {
@@ -64,6 +57,7 @@ public class EnergyBankController : MonoBehaviour
                 gm.AddComponent<MoneySpawnController>();
                 gm.GetComponent<MoneySpawnController>().target = gameObject.transform.position + new Vector3(1.8f,0,-3.621f) + ((Vector3.up * 0.2f) * num);
                 gm.GetComponent<MoneySpawnController>().tempObj = gm.GetComponent<MoneySpawnController>().target + new Vector3(0,5f,0);
+                gm.GetComponent<MoneySpawnController>().speed = speed;
             }
         }
         }
