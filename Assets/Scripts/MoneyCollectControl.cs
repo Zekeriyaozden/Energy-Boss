@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MoneyCollectControl : MonoBehaviour
 {
@@ -23,23 +24,27 @@ public class MoneyCollectControl : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       
+        StartCoroutine(collect(other.gameObject));
     }
 
-    private void OnCollisionEnter(Collision other)
+    IEnumerator collect(GameObject gm)
     {
-        if (other.gameObject.tag == "Player")
+        float ret = Random.Range(0, 0.3f);
+        yield return new WaitForSeconds(ret);
+        if (gm.gameObject.tag == "Player")
         {
             if (collectSize >= 1)
             {
                 gameManeger.GetComponent<GameManeger>().PushStack(this.gameObject);
                 gameObject.transform.SetParent(gameManeger.GetComponent<GameManeger>().collectObj.transform);
                 gameObject.transform.localScale = gameManeger.GetComponent<GameManeger>().referanceObj.transform.localScale;
-                //gameObject.transform.position = ((Vector3.up * size) * collectSize) + gameManeger.GetComponent<GameManeger>().referanceObj.transform.position;
                 gameObject.transform.rotation = gameManeger.GetComponent<GameManeger>().referanceObj.transform.rotation;
                 gameObject.GetComponent<BoxCollider>().enabled = false;
                 gameObject.AddComponent<MoneyCollectEffect>();
             }
         }
     }
+    
+    
+    
 }

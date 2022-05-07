@@ -20,6 +20,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneySpawnController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -28,9 +30,12 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneySpawnController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnergyBankController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -43,6 +48,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -76,7 +82,7 @@
       <workItem from="1651227686393" duration="2248000" />
       <workItem from="1651436686316" duration="5977000" />
       <workItem from="1651824350444" duration="11450000" />
-      <workItem from="1651909866294" duration="3647000" />
+      <workItem from="1651909866294" duration="14610000" />
     </task>
     <servers />
   </component>

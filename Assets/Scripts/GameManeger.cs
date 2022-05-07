@@ -8,6 +8,7 @@ public class GameManeger : MonoBehaviour
 {
     public Stack<GameObject> moneyStack = new Stack<GameObject>();
     public int collectSize;
+    public float moneySpawnSpeed;
     [Range(0,5)]
     public float collectSpeed;
     public GameObject collectObj;
