@@ -4396,6 +4396,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 795070908}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &801194635
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3900793110722755801, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_Name
+      value: wind turbine animation (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.37173885
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.37173885
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.37173885
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 287.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4425268246297175651, guid: 535ab33248616b5478b6c22115605741,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 535ab33248616b5478b6c22115605741, type: 3}
 --- !u!1001 &823756423
 PrefabInstance:
   m_ObjectHideFlags: 0
