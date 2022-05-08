@@ -19,13 +19,13 @@ public class GameManeger : MonoBehaviour
     void Start()
     {
         collectSize = 0;
-        
     }
     void Update()
     {
         collectSize = collectObj.transform.childCount;
 
     }
+    
 
 
 
