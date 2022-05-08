@@ -21,10 +21,21 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Upgrade()
     {
+       
         while (stopCourotine == false)
         {
-            yield return new WaitForSeconds(moneyPopSpeed);
-            GameObject.Find("GameManeger").GetComponent<GameManeger>().MoneySpend(tm);
+            
+            if (tm.gameObject.GetComponent<UpgradeAreaController>().cost > 0)
+            {
+                yield return new WaitForSeconds(moneyPopSpeed);
+                GameObject.Find("GameManeger").GetComponent<GameManeger>().MoneySpend(tm);
+                tm.gameObject.GetComponent<UpgradeAreaController>().cost = tm.gameObject.GetComponent<UpgradeAreaController>().cost - 100;
+            }
+            else
+            {
+                stopCourotine = true;
+            }
+            
         }
     }
 

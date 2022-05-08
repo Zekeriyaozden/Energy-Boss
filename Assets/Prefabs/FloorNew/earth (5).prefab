@@ -165,9 +165,11 @@ GameObject:
   - component: {fileID: 6223721879889777778}
   - component: {fileID: 7057353399266122711}
   - component: {fileID: 5049721347487821597}
+  - component: {fileID: 6663479032135405266}
+  - component: {fileID: 2087354519534221532}
   m_Layer: 0
   m_Name: earth (5)
-  m_TagString: Untagged
+  m_TagString: Upgrade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,6 +237,38 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &6663479032135405266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6707208669653126856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0931ab5ed983d834194b64f225661ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 500
+  referanceObject: {fileID: 5132196889321066407}
+  particle: {fileID: 2185316410191658690, guid: f9256b0b5350ecd408bf54ac68129c1f,
+    type: 3}
+  energyItem: {fileID: 6720302283287029510, guid: 82ce003a03c61994788ef62a0c24f8f3,
+    type: 3}
+  waitSeconds: 3
+--- !u!65 &2087354519534221532
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6707208669653126856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.09999999, y: 0.09999999, z: 0.0698949}
+  m_Center: {x: 0, y: -9.267557e-17, z: 0.03394749}
 --- !u!1 &6908056060258980755
 GameObject:
   m_ObjectHideFlags: 0
