@@ -38,6 +38,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ButtonControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnergyBankController.cs" />
     </changedPaths>
   </component>
@@ -87,7 +88,7 @@
       <workItem from="1651824350444" duration="11450000" />
       <workItem from="1651909866294" duration="18232000" />
       <workItem from="1651949265985" duration="3936000" />
-      <workItem from="1652000193080" duration="7637000" />
+      <workItem from="1652000193080" duration="9328000" />
     </task>
     <servers />
   </component>
