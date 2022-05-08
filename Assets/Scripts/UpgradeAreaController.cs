@@ -6,27 +6,52 @@ using UnityEngine.UI;
 
 public class UpgradeAreaController : MonoBehaviour
 {
+    private GameObject wall;
     public int cost;
     public GameObject referanceObject;
     public GameObject particle;
     public GameObject energyItem;
     public float waitSeconds;
+    public bool isWall;
     private bool flag;
+    private bool flagWall;
     void Start()
     {
         flag = true;
+        flagWall = false;
     }
     
     
     
     void Update()
     {
+
+        if (flagWall)
+        {
+            energyItem.transform.Translate(Vector3.up * Time.deltaTime * GameObject.Find("GameManeger").GetComponent<GameManeger>().wallTranslateSpeed,Space.World);
+        }
+        
+        if (isWall)
+        {
+            if (cost == 0 && flag)
+            {
+                flag = false;
+                StartCoroutine(wallTrans());
+            }
+        }
+        
         referanceObject.GetComponent<Text>().text = cost + "$";
-        if (cost == 0 && flag)
+        if (!isWall && cost == 0 && flag )
         {
             particleSpawn();
             flag = false;
         }
+    }
+
+    IEnumerator wallTrans()
+    {
+        yield return new WaitForSeconds(.5f);
+        flagWall = true;
     }
 
     void particleSpawn()
