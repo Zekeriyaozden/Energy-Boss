@@ -22,10 +22,12 @@ public class EnergyBankController : MonoBehaviour
 
     IEnumerator moneySpawn()
     {
-
+        
         while (flag)
         {
-            if (flag && moneyCount<collectSize )
+            if (GameObject.Find("GameManeger").GetComponent<ButtonControl>().gameStarted)
+            {
+                if (flag && moneyCount<collectSize )
         {
             if (moneyCount % 3 == 0)
             {
@@ -59,6 +61,8 @@ public class EnergyBankController : MonoBehaviour
                 gm.GetComponent<MoneySpawnController>().speed = speed;
             }
         }
+            }
+            
             yield return new WaitForSeconds(waitSeconds);
         }
         
