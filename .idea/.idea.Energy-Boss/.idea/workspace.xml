@@ -30,14 +30,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/DenemeLerp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneySpawnController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnergyBankController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ParticleController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnergyBankController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -86,7 +86,7 @@
       <workItem from="1651824350444" duration="11450000" />
       <workItem from="1651909866294" duration="18232000" />
       <workItem from="1651949265985" duration="3936000" />
-      <workItem from="1652000193080" duration="3357000" />
+      <workItem from="1652000193080" duration="4417000" />
     </task>
     <servers />
   </component>

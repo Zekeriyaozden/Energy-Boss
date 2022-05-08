@@ -6,8 +6,10 @@ using UnityEngine;
 public class StackCollectMoney : MonoBehaviour
 {
     public int stackSize;
+    private bool playerOnArea;
     void Start()
     {
+        playerOnArea = false;
         stackSize = 0;
     }
 
@@ -20,7 +22,7 @@ public class StackCollectMoney : MonoBehaviour
     IEnumerator moneyCollect()
     {
         int stackTemp = stackSize;
-        while (stackTemp > 0)
+        while (stackTemp > 0 && playerOnArea)
         {
             Debug.Log(stackTemp);
             GameObject gm = gameObject.transform.GetChild(stackTemp-1).gameObject;
@@ -40,6 +42,7 @@ public class StackCollectMoney : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            playerOnArea = true;
             StartCoroutine(moneyCollect());
         }
     }
@@ -48,6 +51,7 @@ public class StackCollectMoney : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            playerOnArea = false;
             StopCoroutine(moneyCollect());
         }
     }

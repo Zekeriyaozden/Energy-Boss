@@ -25,8 +25,7 @@ public class EnergyBankController : MonoBehaviour
 
         while (flag)
         {
-            yield return new WaitForSeconds(waitSeconds);
-        if (flag && moneyCount<collectSize )
+            if (flag && moneyCount<collectSize )
         {
             if (moneyCount % 3 == 0)
             {
@@ -60,6 +59,7 @@ public class EnergyBankController : MonoBehaviour
                 gm.GetComponent<MoneySpawnController>().speed = speed;
             }
         }
+            yield return new WaitForSeconds(waitSeconds);
         }
         
     }
@@ -74,16 +74,23 @@ public class EnergyBankController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            StopCoroutine(moneySpawn());
             flag = false;
         }
+    }
+
+    IEnumerator coroutineStart()
+    {
+        yield return new WaitForSeconds(.8f);
+        flag = true;
+        StartCoroutine(moneySpawn());
     }
 
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Player")
         {
-            flag = true;
-            StartCoroutine(moneySpawn());
+            StartCoroutine(coroutineStart());
         }
     }
 }
