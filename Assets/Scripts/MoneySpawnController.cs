@@ -5,7 +5,6 @@ using UnityEngine;
 public class MoneySpawnController : MonoBehaviour
 {
     public Vector3 target;
-    public GameObject referanceObj;
     public Vector3 tempObj;
     public Vector3 tempPos1;
     public Vector3 tempPos2;

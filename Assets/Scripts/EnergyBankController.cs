@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnergyBankController : MonoBehaviour
 {
-    public Transform parentObj;
+    private Transform parentObj;
     public float waitSeconds;
     public int moneyCount;
     public GameObject referanceObj;
@@ -81,7 +81,8 @@ public class EnergyBankController : MonoBehaviour
 
     IEnumerator coroutineStart()
     {
-        yield return new WaitForSeconds(.8f);
+        flag = false;
+        yield return new WaitForSeconds(waitSeconds + 0.1f);
         flag = true;
         StartCoroutine(moneySpawn());
     }
