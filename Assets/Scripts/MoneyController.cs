@@ -31,5 +31,10 @@ public class MoneyController : MonoBehaviour
             tempPos2 = Vector3.Lerp(tempObj, target.position , interpolate);
             gameObject.transform.position = Vector3.Lerp(tempPos1, tempPos2, interpolate);
         }
+
+        if (interpolate >= 1)
+        {
+            Destroy(gameObject);
+        }
     }
 }

@@ -255,7 +255,7 @@ MonoBehaviour:
     type: 3}
   energyItem: {fileID: 6720302283287029510, guid: 82ce003a03c61994788ef62a0c24f8f3,
     type: 3}
-  waitSeconds: 3
+  waitSeconds: 2.4
 --- !u!65 &2087354519534221532
 BoxCollider:
   m_ObjectHideFlags: 0

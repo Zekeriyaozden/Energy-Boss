@@ -25,8 +25,9 @@ public class PlayerController : MonoBehaviour
         while (stopCourotine == false)
         {
             
-            if (tm.gameObject.GetComponent<UpgradeAreaController>().cost > 0)
+            if (tm.gameObject.GetComponent<UpgradeAreaController>().cost > 0 && GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize > 1)
             {
+                Debug.Log(GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize);
                 yield return new WaitForSeconds(moneyPopSpeed);
                 GameObject.Find("GameManeger").GetComponent<GameManeger>().MoneySpend(tm);
                 tm.gameObject.GetComponent<UpgradeAreaController>().cost = tm.gameObject.GetComponent<UpgradeAreaController>().cost - 100;

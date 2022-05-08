@@ -24,10 +24,6 @@ public class GameManeger : MonoBehaviour
     {
         collectSize = collectObj.transform.childCount;
 
-        void rsd(GameObject obj)
-        {
-            Debug.Log(obj.name);
-        }
     }
 
 

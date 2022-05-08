@@ -31,14 +31,16 @@ public class UpgradeAreaController : MonoBehaviour
 
     void particleSpawn()
     {
-        Instantiate(particle, gameObject.transform.position, Quaternion.identity);
+        GameObject gm = Instantiate(particle, gameObject.transform.position, Quaternion.identity);
+        gm.transform.position += new Vector3(0, 0, -2f);
         StartCoroutine(objectSpawn());
     }
 
     IEnumerator objectSpawn()
     {
         yield return new WaitForSeconds(waitSeconds);
-        Instantiate(energyItem, gameObject.transform.position + new Vector3(-1.4f, 1.1f, -0.2f), Quaternion.identity);
+        GameObject gm = Instantiate(energyItem, gameObject.transform.position + new Vector3(-1.4f, 0, -0.2f), Quaternion.identity);
+        gm.transform.eulerAngles = new Vector3(0, 180, 0);
         // x - 1.4
         // y + 1.1
         // z - 0.2

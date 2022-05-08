@@ -284,7 +284,7 @@ MonoBehaviour:
     type: 3}
   energyItem: {fileID: 2569916387050043577, guid: 2bc3dd8389e10e147ab724071f13acab,
     type: 3}
-  waitSeconds: 3
+  waitSeconds: 2.4
 --- !u!1 &7772395527176616267
 GameObject:
   m_ObjectHideFlags: 0

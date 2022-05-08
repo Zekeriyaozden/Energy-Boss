@@ -39,6 +39,7 @@
           <e p="MoneyCollectEffect.cs" t="Include" />
           <e p="MoneyController.cs" t="Include" />
           <e p="MoneySpawnController.cs" t="Include" />
+          <e p="ParticleController.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
           <e p="StackCollectMoney.cs" t="Include" />
           <e p="UpgradeAreaController.cs" t="Include" />
