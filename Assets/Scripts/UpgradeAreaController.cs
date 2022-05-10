@@ -39,7 +39,6 @@ public class UpgradeAreaController : MonoBehaviour
                 StartCoroutine(wallTrans());
             }
         }
-        
         referanceObject.GetComponent<Text>().text = cost + "$";
         if (!isWall && cost == 0 && flag )
         {

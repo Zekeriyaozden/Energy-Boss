@@ -3304,20 +3304,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &523899955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 523899948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfd7a98920698074292587f12cdc4714, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moneyPopSpeed: 0.15
-  stopCourotine: 0
 --- !u!1001 &571039671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4865,6 +4851,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8423144278750151825, guid: 1005745d5b4819e4383a6eed21ce8e99,
+        type: 3}
+      propertyPath: moneyPopSpeed
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2451318470167769086, guid: 1005745d5b4819e4383a6eed21ce8e99,
         type: 3}
       propertyPath: m_RootOrder
@@ -5639,6 +5630,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6957350979139773369, guid: f8c8263398f7879438354343e658c0b4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7081887356688800724, guid: f8c8263398f7879438354343e658c0b4,
         type: 3}
       propertyPath: m_Name
@@ -9067,6 +9063,8 @@ MonoBehaviour:
   collectSize: 0
   wallTranslateSpeed: 1.33
   moneySpawnSpeed: 1.23
+  stackWait: 0.37
+  playerMaxStack: 5
   collectSpeed: 1.03
   collectObj: {fileID: 2012036647}
   referanceObj: {fileID: 1048185506}
@@ -9384,6 +9382,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663479032135405266, guid: ce412b22a92af2744b4bbe1b9e27d52d,
+        type: 3}
+      propertyPath: waitSeconds
+      value: 1.98
       objectReference: {fileID: 0}
     - target: {fileID: 6707208669653126856, guid: ce412b22a92af2744b4bbe1b9e27d52d,
         type: 3}
@@ -10758,6 +10761,11 @@ PrefabInstance:
     - target: {fileID: 2388526751167157218, guid: 87e67570ccd928b4b8139ee41fd9d368,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2928608720047406578, guid: 87e67570ccd928b4b8139ee41fd9d368,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3057399614948133208, guid: 87e67570ccd928b4b8139ee41fd9d368,

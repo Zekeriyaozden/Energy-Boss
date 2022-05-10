@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator Upgrade()
     {
 
-
+        Debug.Log(tm.gameObject.name);
        
         while (stopCourotine == false)
         {
@@ -32,8 +32,8 @@ public class PlayerController : MonoBehaviour
             if (tm.gameObject.GetComponent<UpgradeAreaController>().cost > 0 && GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize > 1)
             {
                 yield return new WaitForSeconds(moneyPopSpeed);
-                GameObject.Find("GameManeger").GetComponent<GameManeger>().MoneySpend(tm);
                 tm.gameObject.GetComponent<UpgradeAreaController>().cost = tm.gameObject.GetComponent<UpgradeAreaController>().cost - 100;
+                GameObject.Find("GameManeger").GetComponent<GameManeger>().MoneySpend(tm);
             }
             else
             {
@@ -55,9 +55,9 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        tm = other.transform;
         if (other.tag == "Upgrade")
         {
+            tm = other.transform;
             stopCourotine = false;
             StartCoroutine("Upgrade");
         }

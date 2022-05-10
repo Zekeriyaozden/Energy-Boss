@@ -27,7 +27,6 @@ public class StackCollectMoney : MonoBehaviour
         int stackTemp = stackSize;
         while (stackTemp > 0 && playerOnArea)
         {
-            Debug.Log(stackTemp);
             GameObject gm = gameObject.transform.GetChild(stackTemp-1).gameObject;
             yield return new WaitForSeconds(stackSpawnWait);
             GameObject.Find("GameManeger").GetComponent<GameManeger>().PushStack(gm);

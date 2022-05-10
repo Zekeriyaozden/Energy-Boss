@@ -23,7 +23,6 @@ public class JoystickPlayerExample : MonoBehaviour
     public void FixedUpdate()
     {
         direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
-        Debug.Log(direction);
         isPlayerMoving();
         animControl();
     }
@@ -36,7 +35,6 @@ public class JoystickPlayerExample : MonoBehaviour
     }
     private bool isPlayerMoving()
     {
-        Debug.Log(direction.magnitude);
         if (direction.magnitude > 0)
         {
             playerMechanic();
