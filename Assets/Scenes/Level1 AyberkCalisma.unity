@@ -18565,6 +18565,7 @@ MonoBehaviour:
   collectSize: 0
   wallTranslateSpeed: 1.33
   moneySpawnSpeed: 1.23
+  stackSpawnWait: 0.1
   collectSpeed: 1.03
   collectObj: {fileID: 2012036647}
   referanceObj: {fileID: 1048185506}

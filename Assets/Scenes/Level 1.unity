@@ -6175,13 +6175,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523899948}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dfd7a98920698074292587f12cdc4714, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moneyPopSpeed: 0.15
   stopCourotine: 0
+  moneyCountPlayer: 0
+  moneyParent: {fileID: 2012036647}
 --- !u!1 &557086997
 GameObject:
   m_ObjectHideFlags: 0
@@ -14582,32 +14584,32 @@ PrefabInstance:
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.19996998
+      value: -0.185
       objectReference: {fileID: 0}
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.60510004
+      value: -0.873
       objectReference: {fileID: 0}
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.006422044
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.70710677
+      value: -0.70710677
       objectReference: {fileID: 0}
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.00012344122
+      value: 0.00012340446
       objectReference: {fileID: 0}
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.00012332201
+      value: -0.00012340446
       objectReference: {fileID: 0}
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
@@ -14617,17 +14619,27 @@ PrefabInstance:
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -89.98
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0.020000001
       objectReference: {fileID: 0}
     - target: {fileID: 683805463587428448, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 1078581389927578927, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1078581389927578927, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -3.66
       objectReference: {fileID: 0}
     - target: {fileID: 1078581390126017144, guid: 314fb9bb510c8bc4eb5c2ed3b0313207,
         type: 3}
@@ -18563,8 +18575,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectSize: 0
-  wallTranslateSpeed: 1.33
+  wallTranslateSpeed: 1.39
   moneySpawnSpeed: 1.23
+  stackWait: 0.06
+  playerMaxStack: 7
   collectSpeed: 1.03
   collectObj: {fileID: 2012036647}
   referanceObj: {fileID: 1048185506}

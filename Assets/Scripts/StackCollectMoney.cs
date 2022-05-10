@@ -7,10 +7,13 @@ public class StackCollectMoney : MonoBehaviour
 {
     public int stackSize;
     private bool playerOnArea;
+    private float stackSpawnWait;
     void Start()
     {
+        stackSpawnWait = GameObject.Find("GameManeger").GetComponent<GameManeger>().stackWait;
         playerOnArea = false;
         stackSize = 0;
+        
     }
 
     // Update is called once per frame
@@ -26,11 +29,9 @@ public class StackCollectMoney : MonoBehaviour
         {
             Debug.Log(stackTemp);
             GameObject gm = gameObject.transform.GetChild(stackTemp-1).gameObject;
-            yield return new WaitForSeconds(.2f);
+            yield return new WaitForSeconds(stackSpawnWait);
             GameObject.Find("GameManeger").GetComponent<GameManeger>().PushStack(gm);
             gm.transform.SetParent(GameObject.Find("GameManeger").GetComponent<GameManeger>().collectObj.transform);
-            //gm.transform.localScale = GameObject.Find("GameManeger").GetComponent<GameManeger>().referanceObj.transform.localScale;
-            //gameObject.transform.position = ((Vector3.up * size) * collectSize) + gameManeger.GetComponent<GameManeger>().referanceObj.transform.position;
             gm.transform.rotation = GameObject.Find("GameManeger").GetComponent<GameManeger>().referanceObj.transform.rotation;
             gm.GetComponent<BoxCollider>().enabled = false;
             gm.AddComponent<MoneyCollectEffect>();

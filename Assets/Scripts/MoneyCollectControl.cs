@@ -35,12 +35,20 @@ public class MoneyCollectControl : MonoBehaviour
         {
             if (collectSize >= 1)
             {
-                gameManeger.GetComponent<GameManeger>().PushStack(this.gameObject);
-                gameObject.transform.SetParent(gameManeger.GetComponent<GameManeger>().collectObj.transform);
-                //gameObject.transform.localScale = gameManeger.GetComponent<GameManeger>().referanceObj.transform.localScale;
-                gameObject.transform.rotation = gameManeger.GetComponent<GameManeger>().referanceObj.transform.rotation;
-                gameObject.GetComponent<BoxCollider>().enabled = false;
-                gameObject.AddComponent<MoneyCollectEffect>();
+                if (gm.gameObject.GetComponent<PlayerController>().moneyCountPlayer >
+                    GameObject.Find("GameManeger").GetComponent<GameManeger>().playerMaxStack)
+                {
+                    
+                }
+                else
+                {
+                    gameManeger.GetComponent<GameManeger>().PushStack(this.gameObject);
+                    gameObject.transform.SetParent(gameManeger.GetComponent<GameManeger>().collectObj.transform);
+                    gameObject.transform.rotation = gameManeger.GetComponent<GameManeger>().referanceObj.transform.rotation;
+                    gameObject.GetComponent<BoxCollider>().enabled = false;
+                    gameObject.AddComponent<MoneyCollectEffect>();
+                }
+               
             }
         }
     }
