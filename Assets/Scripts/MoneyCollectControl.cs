@@ -37,7 +37,7 @@ public class MoneyCollectControl : MonoBehaviour
             {
                 gameManeger.GetComponent<GameManeger>().PushStack(this.gameObject);
                 gameObject.transform.SetParent(gameManeger.GetComponent<GameManeger>().collectObj.transform);
-                gameObject.transform.localScale = gameManeger.GetComponent<GameManeger>().referanceObj.transform.localScale;
+                //gameObject.transform.localScale = gameManeger.GetComponent<GameManeger>().referanceObj.transform.localScale;
                 gameObject.transform.rotation = gameManeger.GetComponent<GameManeger>().referanceObj.transform.rotation;
                 gameObject.GetComponent<BoxCollider>().enabled = false;
                 gameObject.AddComponent<MoneyCollectEffect>();

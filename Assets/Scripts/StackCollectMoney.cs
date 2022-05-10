@@ -29,7 +29,7 @@ public class StackCollectMoney : MonoBehaviour
             yield return new WaitForSeconds(.2f);
             GameObject.Find("GameManeger").GetComponent<GameManeger>().PushStack(gm);
             gm.transform.SetParent(GameObject.Find("GameManeger").GetComponent<GameManeger>().collectObj.transform);
-            gm.transform.localScale = GameObject.Find("GameManeger").GetComponent<GameManeger>().referanceObj.transform.localScale;
+            //gm.transform.localScale = GameObject.Find("GameManeger").GetComponent<GameManeger>().referanceObj.transform.localScale;
             //gameObject.transform.position = ((Vector3.up * size) * collectSize) + gameManeger.GetComponent<GameManeger>().referanceObj.transform.position;
             gm.transform.rotation = GameObject.Find("GameManeger").GetComponent<GameManeger>().referanceObj.transform.rotation;
             gm.GetComponent<BoxCollider>().enabled = false;
