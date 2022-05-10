@@ -10,6 +10,8 @@ public class GameManeger : MonoBehaviour
     public int collectSize;
     public float wallTranslateSpeed;
     public float moneySpawnSpeed;
+    public float stackWait;
+    [Range(0,350)] public int playerMaxStack; 
     [Range(0,5)]
     public float collectSpeed;
     public GameObject collectObj;

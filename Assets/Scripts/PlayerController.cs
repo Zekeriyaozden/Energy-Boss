@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     public float moneyPopSpeed;
     public bool stopCourotine;
     private Transform tm;
+    public int moneyCountPlayer;
+    public GameObject moneyParent;
     void Start()
     {
         stopCourotine = true;
@@ -16,11 +18,13 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        moneyCountPlayer = moneyParent.transform.childCount - 1;
     }
 
     IEnumerator Upgrade()
     {
+
+
        
         while (stopCourotine == false)
         {

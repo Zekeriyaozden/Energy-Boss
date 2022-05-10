@@ -351,6 +351,7 @@ GameObject:
   - component: {fileID: 2976603950440281411}
   - component: {fileID: 2976603950440281409}
   - component: {fileID: 9029470561325970535}
+  - component: {fileID: -8423144278750151825}
   m_Layer: 0
   m_Name: MC T Pose 1
   m_TagString: Untagged
@@ -443,6 +444,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0461826, y: 1.4945244, z: 0.5975838}
   m_Center: {x: 0.006043434, y: 0.735367, z: 0.014169693}
+--- !u!114 &-8423144278750151825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2976603950440281412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfd7a98920698074292587f12cdc4714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyPopSpeed: 0.15
+  stopCourotine: 0
+  moneyCountPlayer: 0
+  moneyParent: {fileID: 3824426162654627225}
 --- !u!1 &3065663581688534559
 GameObject:
   m_ObjectHideFlags: 0
