@@ -40,6 +40,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaUIController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -89,7 +90,8 @@
       <workItem from="1651909866294" duration="18232000" />
       <workItem from="1651949265985" duration="3936000" />
       <workItem from="1652000193080" duration="9895000" />
-      <workItem from="1652169843902" duration="5978000" />
+      <workItem from="1652169843902" duration="6294000" />
+      <workItem from="1652186277445" duration="910000" />
     </task>
     <servers />
   </component>
