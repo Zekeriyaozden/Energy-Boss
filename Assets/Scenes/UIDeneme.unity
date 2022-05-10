@@ -345,7 +345,7 @@ RectTransform:
   m_GameObject: {fileID: 276845089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4933, y: 1.4933, z: 1.4933}
+  m_LocalScale: {x: 1.9167548, y: 1.9167548, z: 1.9167548}
   m_Children: []
   m_Father: {fileID: 773456691}
   m_RootOrder: 1
@@ -489,14 +489,14 @@ RectTransform:
   m_GameObject: {fileID: 552296125}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3993, y: 2.3993, z: 2.3993}
+  m_LocalScale: {x: 2.0873911, y: 2.0873911, z: 2.0873911}
   m_Children: []
   m_Father: {fileID: 2100165715}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000040055, y: 0}
+  m_AnchoredPosition: {x: 0.000040055, y: 5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &552296127
@@ -519,7 +519,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ca85a885c1a77f04bbd32fd3feb82cd4, type: 3}
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 0
     m_FontStyle: 1
     m_BestFit: 1
@@ -1588,7 +1588,7 @@ RectTransform:
   m_GameObject: {fileID: 2100165714}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1.1016601}
   m_Children:
   - {fileID: 552296126}
   m_Father: {fileID: 1886542628}
@@ -1663,14 +1663,14 @@ RectTransform:
   m_GameObject: {fileID: 2140391422}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.3993, y: 2.3993, z: 2.3993}
+  m_LocalScale: {x: 2.303328, y: 2.303328, z: 2.303328}
   m_Children: []
   m_Father: {fileID: 1684925340}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000040055, y: 3}
+  m_AnchoredPosition: {x: -7, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140391424
@@ -1693,7 +1693,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: ca85a885c1a77f04bbd32fd3feb82cd4, type: 3}
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
     m_FontSize: 95
     m_FontStyle: 1
     m_BestFit: 1
