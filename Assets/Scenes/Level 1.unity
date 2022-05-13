@@ -13101,7 +13101,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 1500$
+  m_Text: 0$
 --- !u!222 &1168484857
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18708,7 +18708,6 @@ MonoBehaviour:
   moneySpawnSpeed: 1.23
   stackSizeMax: 5
   stackWait: 0.06
-  playerMaxStack: 7
   collectSpeed: 1.03
   collectObj: {fileID: 2012036647}
   referanceObj: {fileID: 1048185506}
@@ -18765,6 +18764,8 @@ MonoBehaviour:
   speedButtonText: {fileID: 2025458676}
   stackList: c8000000
   speedList: c8000000
+  speedIncrease: 2.02
+  stackIncrease: 4
 --- !u!1 &1753452979
 GameObject:
   m_ObjectHideFlags: 0

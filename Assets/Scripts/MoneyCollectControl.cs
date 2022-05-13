@@ -36,7 +36,7 @@ public class MoneyCollectControl : MonoBehaviour
             if (collectSize >= 1)
             {
                 if (gm.gameObject.GetComponent<PlayerController>().moneyCountPlayer >
-                    GameObject.Find("GameManeger").GetComponent<GameManeger>().playerMaxStack)
+                    GameObject.Find("GameManeger").GetComponent<GameManeger>().stackSizeMax)
                 {
                     
                 }
