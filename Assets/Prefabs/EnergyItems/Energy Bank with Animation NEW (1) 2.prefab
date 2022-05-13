@@ -434,7 +434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b680263c80f1d4a9fbd056f10a5275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parentObj: {fileID: 0}
   waitSeconds: 1.12
   moneyCount: 0
   referanceObj: {fileID: 1730363703027760219, guid: da8d92a826267f744a718548737683b5,
@@ -640,6 +639,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6978485164981774361}
   - component: {fileID: 524087531294856157}
+  - component: {fileID: 7707060169637690500}
   m_Layer: 0
   m_Name: Fuel Cell Energy Animation
   m_TagString: Untagged
@@ -676,6 +676,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.898079, y: 6.714422, z: 5.872364}
   m_Center: {x: -0.06802368, y: 3.3334131, z: 0.03778267}
+--- !u!95 &7707060169637690500
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7751644817223987875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7701052a6f866947a4eab63356b5b47, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7907290337725673144
 GameObject:
   m_ObjectHideFlags: 0

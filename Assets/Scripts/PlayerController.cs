@@ -27,10 +27,9 @@ public class PlayerController : MonoBehaviour
         {
             if (tm.gameObject.GetComponent<UpgradeAreaController>().cost > 0 && GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize > 1)
             {
-                yield return new WaitForSeconds(moneyPopSpeed);
                 GameObject.Find("GameManeger").GetComponent<GameManeger>().MoneySpend(tm);
                 tm.gameObject.GetComponent<UpgradeAreaController>().cost = tm.gameObject.GetComponent<UpgradeAreaController>().cost - 100;
-                Debug.Log("-");
+                yield return new WaitForSeconds(moneyPopSpeed);
             }
             else
             {

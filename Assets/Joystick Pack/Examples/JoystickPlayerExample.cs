@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class JoystickPlayerExample : MonoBehaviour
 {
-    public float speed;
+    private float speed;
     public Vector3 direction;
     public DynamicJoystick variableJoystick;
     public bool isMoving;
@@ -16,12 +16,14 @@ public class JoystickPlayerExample : MonoBehaviour
 
     public void Start()
     {
+        speed = GameObject.Find("GameManeger").GetComponent<GameManeger>().PlayerSpeed;
         isMoving = false;
         isIdle = true;
     }
 
     public void FixedUpdate()
     {
+        speed = GameObject.Find("GameManeger").GetComponent<GameManeger>().PlayerSpeed;
         direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
         isPlayerMoving();
         animControl();

@@ -25,14 +25,15 @@ public class StackCollectMoney : MonoBehaviour
     IEnumerator moneyCollect()
     {
         int stackTemp = stackSize;
-        while (stackTemp > 0 && playerOnArea)
+        while (stackTemp > 0 && playerOnArea && GameObject.Find("GameManeger").GetComponent<GameManeger>().stackSizeMax >
+            (GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize - 1))
         {
             GameObject gm = gameObject.transform.GetChild(stackTemp-1).gameObject;
-            yield return new WaitForSeconds(stackSpawnWait);
             GameObject.Find("GameManeger").GetComponent<GameManeger>().PushStack(gm);
             gm.transform.SetParent(GameObject.Find("GameManeger").GetComponent<GameManeger>().collectObj.transform);
             gm.transform.rotation = GameObject.Find("GameManeger").GetComponent<GameManeger>().referanceObj.transform.rotation;
             gm.GetComponent<BoxCollider>().enabled = false;
+            yield return new WaitForSeconds(stackSpawnWait);
             gm.AddComponent<MoneyCollectEffect>();
             stackTemp--;
         }

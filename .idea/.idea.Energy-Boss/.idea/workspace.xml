@@ -19,6 +19,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UpgradeUIManeger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneySpawnController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ParticleController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -32,15 +33,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/ParticleController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneySpawnController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ButtonControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnergyBankController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaUIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
+      <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
+      <option value="$PROJECT_DIR$/Assets/UIUpgradeArea.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UIUpgradeArea.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ButtonControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeUIManeger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -93,6 +97,7 @@
       <workItem from="1652169843902" duration="6294000" />
       <workItem from="1652186277445" duration="910000" />
       <workItem from="1652203101421" duration="3051000" />
+      <workItem from="1652438478469" duration="7895000" />
     </task>
     <servers />
   </component>

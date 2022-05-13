@@ -9,7 +9,9 @@ public class GameManeger : MonoBehaviour
     public Stack<GameObject> moneyStack = new Stack<GameObject>();
     public int collectSize;
     public float wallTranslateSpeed;
+    public float PlayerSpeed;
     public float moneySpawnSpeed;
+    public int stackSizeMax;
     public float stackWait;
     [Range(0,350)] public int playerMaxStack; 
     [Range(0,5)]
@@ -33,10 +35,8 @@ public class GameManeger : MonoBehaviour
 
     public void MoneySpend(Transform target)
     {
-        Debug.Log("moneySpend");
         if (collectSize > 1)
         {
-            Debug.Log("moneySpendInIf");
             GameObject obj = PopStack();
             obj.gameObject.transform.SetParent(null);
             obj.AddComponent<MoneyController>();
@@ -44,6 +44,16 @@ public class GameManeger : MonoBehaviour
             obj.GetComponent<MoneyController>().spendSpeed = spendSpeed;
         }
 
+    }
+
+
+    public void moneySpendUI(int price)
+    {
+        
+    }
+    public void stackUpdateUI(int max)
+    {
+        stackSizeMax = stackSizeMax + max;
     }
 
     public GameObject PopStack()

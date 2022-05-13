@@ -11,6 +11,9 @@ public class ButtonControl : MonoBehaviour
     public Button startButton;
     public Button settingButton;
     public GameObject popUp;
+    public GameObject moneyCountUItext;
+    public GameObject UpgradeUI;
+
     void Start()
     {
         popUpFlag = false;
@@ -24,6 +27,11 @@ public class ButtonControl : MonoBehaviour
         gameStarted = true;
         joystic.gameObject.SetActive(true);
         Destroy(startButton.gameObject);
+    }
+
+    public void closeUIClicked()
+    {
+        UpgradeUI.gameObject.SetActive(false);
     }
 
     public void clickedPopUp()
@@ -45,8 +53,7 @@ public class ButtonControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        
+        moneyCountUItext.GetComponent<Text>().text = ((gameObject.GetComponent<GameManeger>().collectSize - 1) * 100).ToString() + "$";
     }
     
     
