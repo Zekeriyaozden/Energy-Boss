@@ -33,9 +33,12 @@ public class GameManeger : MonoBehaviour
 
     public void MoneySpend(Transform target)
     {
+        Debug.Log("moneySpend");
         if (collectSize > 1)
         {
+            Debug.Log("moneySpendInIf");
             GameObject obj = PopStack();
+            obj.gameObject.transform.SetParent(null);
             obj.AddComponent<MoneyController>();
             obj.GetComponent<MoneyController>().target = target;
             obj.GetComponent<MoneyController>().spendSpeed = spendSpeed;

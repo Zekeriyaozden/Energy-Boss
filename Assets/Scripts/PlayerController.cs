@@ -23,17 +23,14 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator Upgrade()
     {
-
-        Debug.Log(tm.gameObject.name);
-       
         while (stopCourotine == false)
         {
-            
             if (tm.gameObject.GetComponent<UpgradeAreaController>().cost > 0 && GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize > 1)
             {
                 yield return new WaitForSeconds(moneyPopSpeed);
-                tm.gameObject.GetComponent<UpgradeAreaController>().cost = tm.gameObject.GetComponent<UpgradeAreaController>().cost - 100;
                 GameObject.Find("GameManeger").GetComponent<GameManeger>().MoneySpend(tm);
+                tm.gameObject.GetComponent<UpgradeAreaController>().cost = tm.gameObject.GetComponent<UpgradeAreaController>().cost - 100;
+                Debug.Log("-");
             }
             else
             {
