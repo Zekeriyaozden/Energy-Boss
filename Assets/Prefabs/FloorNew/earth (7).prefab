@@ -265,8 +265,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.09999999, y: 0.09999999, z: 0.0744764}
-  m_Center: {x: 0, y: -1.1810768e-16, z: 0.03623821}
+  m_Size: {x: 0.0671009, y: 0.055676907, z: 0.0744764}
+  m_Center: {x: -0.0012482023, y: 0.0033596333, z: 0.03623822}
 --- !u!114 &7193166745787669509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,6 +286,7 @@ MonoBehaviour:
   energyItem: {fileID: 2569916387050043577, guid: 2bc3dd8389e10e147ab724071f13acab,
     type: 3}
   waitSeconds: 2.4
+  isWall: 0
 --- !u!1 &7772395527176616267
 GameObject:
   m_ObjectHideFlags: 0

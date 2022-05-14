@@ -14,6 +14,7 @@ public class MoneyCollectEffect : MonoBehaviour
     public int collectSize;
     private float interpolate;
     private bool flag;
+    private GameObject gm;
     
     void Start()
     {
@@ -29,11 +30,12 @@ public class MoneyCollectEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        referanceObj = GameObject.Find("GameManeger").GetComponent<GameManeger>().referanceObj;
+        gm = GameObject.Find("GameManeger");
+        referanceObj = gm.GetComponent<GameManeger>().referanceObj;
         if (interpolate < 1)
         {
             interpolate += speed * Time.deltaTime;
-            target = referanceObj.transform.position + ((Vector3.up * 0.08f) * collectSize);
+            target = referanceObj.transform.position + ((Vector3.up * gm.GetComponent<GameManeger>().moneySpaceSize) * collectSize);
             gameObject.transform.rotation = referanceObj.transform.rotation;
             tempPos1 = Vector3.Lerp(thisPos,tempObj,interpolate);
             tempPos2 = Vector3.Lerp(tempObj, target, interpolate);

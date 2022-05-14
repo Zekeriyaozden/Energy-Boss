@@ -257,6 +257,7 @@ MonoBehaviour:
   energyItem: {fileID: 6720302283287029510, guid: 82ce003a03c61994788ef62a0c24f8f3,
     type: 3}
   waitSeconds: 2.4
+  isWall: 0
 --- !u!65 &2087354519534221532
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -268,8 +269,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.09999999, y: 0.09999999, z: 0.0698949}
-  m_Center: {x: 0, y: -9.267557e-17, z: 0.03394749}
+  m_Size: {x: 0.05554865, y: 0.053429354, z: 0.06989492}
+  m_Center: {x: -0.0023834324, y: 0.0047311056, z: 0.033947516}
 --- !u!1 &6908056060258980755
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,7 +28,7 @@ public class UpgradeAreaController : MonoBehaviour
 
         if (flagWall)
         {
-            energyItem.transform.Translate(Vector3.up * Time.deltaTime * GameObject.Find("GameManeger").GetComponent<GameManeger>().wallTranslateSpeed,Space.World);
+            Destroy(energyItem.gameObject);
         }
         
         if (isWall)
@@ -39,7 +39,7 @@ public class UpgradeAreaController : MonoBehaviour
                 StartCoroutine(wallTrans());
             }
         }
-        referanceObject.GetComponent<Text>().text = cost + "$";
+        referanceObject.GetComponent<Text>().text = cost.ToString() + "$";
         if (!isWall && cost == 0 && flag )
         {
             particleSpawn();
