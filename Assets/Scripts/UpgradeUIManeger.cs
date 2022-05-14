@@ -32,13 +32,10 @@ public class UpgradeUIManeger : MonoBehaviour
 
     public void spendForStack()
     {
-        Debug.Log("clicked");
         if(stackList.Count> (stackFlag + 1))
         {
-            Debug.Log("inIf");
             for (int i = 0; i < (tempStack / 100); i++)
             {
-                Debug.Log("for");
                 GameObject money = gameObject.GetComponent<GameManeger>().PopStack();
                 Destroy(money.gameObject);
             }
@@ -69,7 +66,7 @@ public class UpgradeUIManeger : MonoBehaviour
     
     void Update()
     {
-        if (tempStack < ((gameObject.GetComponent<GameManeger>().collectSize - 1) * 100))
+        if (tempStack <= ((gameObject.GetComponent<GameManeger>().collectSize - 1) * 100))
         {
             stackButton.GetComponent<Button>().interactable = true;
         }
@@ -78,7 +75,7 @@ public class UpgradeUIManeger : MonoBehaviour
             stackButton.GetComponent<Button>().interactable = false;
         }
 
-        if (tempSpeed < ((gameObject.GetComponent<GameManeger>().collectSize - 1) * 100))
+        if (tempSpeed <= ((gameObject.GetComponent<GameManeger>().collectSize - 1) * 100))
         {
             speedButton.GetComponent<Button>().interactable = true;
         }
