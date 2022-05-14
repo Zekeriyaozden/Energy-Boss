@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0931ab5ed983d834194b64f225661ebc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 500
+  cost: 3000
   referanceObject: {fileID: 5132196889321066407}
   particle: {fileID: 2185316410191658690, guid: f9256b0b5350ecd408bf54ac68129c1f,
     type: 3}

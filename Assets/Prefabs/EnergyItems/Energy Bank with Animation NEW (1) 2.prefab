@@ -434,12 +434,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b680263c80f1d4a9fbd056f10a5275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitSeconds: 1.12
+  waitSeconds: 0.25
   moneyCount: 0
   referanceObj: {fileID: 1730363703027760219, guid: da8d92a826267f744a718548737683b5,
     type: 3}
   speed: 1.2
-  collectSize: 10
+  collectSize: 50
 --- !u!1 &2596554242230871109
 GameObject:
   m_ObjectHideFlags: 0
