@@ -54,7 +54,7 @@ public class ButtonControl : MonoBehaviour
     void Update()
     {
         moneyCountUItext.GetComponent<Text>().text = ((gameObject.GetComponent<GameManeger>().collectSize - 1) * 100).ToString() + "$" + "/" +
-                                                     (gameObject.GetComponent<GameManeger>().collectSize / 100);
+                                                     (gameObject.GetComponent<GameManeger>().stackSizeMax * 100).ToString() + "$";
     }
     
     

@@ -59,7 +59,7 @@ public class UpgradeUIManeger : MonoBehaviour
                 GameObject money = gameObject.GetComponent<GameManeger>().PopStack();
                 Destroy(money.gameObject);
             }
-            gameObject.GetComponent<GameManeger>().PlayerSpeed += speedIncrease; 
+            gameObject.GetComponent<GameManeger>().PlayerSpeed += (gameObject.GetComponent<GameManeger>().PlayerSpeed / 100) * speedIncrease; 
             speedFlag++;
             tempSpeed = speedList[speedFlag];
             speedButtonText.GetComponent<Text>().text = tempSpeed.ToString() + "$";

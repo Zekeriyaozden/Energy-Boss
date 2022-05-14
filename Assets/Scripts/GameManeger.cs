@@ -50,10 +50,7 @@ public class GameManeger : MonoBehaviour
     {
         
     }
-    public void stackUpdateUI(int max)
-    {
-        stackSizeMax = stackSizeMax + max;
-    }
+
 
     public GameObject PopStack()
     {
