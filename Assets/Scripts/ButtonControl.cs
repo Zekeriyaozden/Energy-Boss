@@ -53,7 +53,8 @@ public class ButtonControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moneyCountUItext.GetComponent<Text>().text = ((gameObject.GetComponent<GameManeger>().collectSize - 1) * 100).ToString() + "$";
+        moneyCountUItext.GetComponent<Text>().text = ((gameObject.GetComponent<GameManeger>().collectSize - 1) * 100).ToString() + "$" + "/" +
+                                                     (gameObject.GetComponent<GameManeger>().collectSize / 100);
     }
     
     

@@ -41,10 +41,10 @@
       <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
       <option value="$PROJECT_DIR$/Assets/UIUpgradeArea.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIUpgradeArea.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ButtonControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeUIManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ButtonControl.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -97,7 +97,8 @@
       <workItem from="1652169843902" duration="6294000" />
       <workItem from="1652186277445" duration="910000" />
       <workItem from="1652203101421" duration="3051000" />
-      <workItem from="1652438478469" duration="11971000" />
+      <workItem from="1652438478469" duration="12796000" />
+      <workItem from="1652514695762" duration="1092000" />
     </task>
     <servers />
   </component>

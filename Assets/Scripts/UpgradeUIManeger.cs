@@ -30,22 +30,26 @@ public class UpgradeUIManeger : MonoBehaviour
 
 
 
-    void spendForStack()
+    public void spendForStack()
     {
+        Debug.Log("clicked");
         if(stackList.Count> (stackFlag + 1))
         {
+            Debug.Log("inIf");
             for (int i = 0; i < (tempStack / 100); i++)
             {
+                Debug.Log("for");
                 GameObject money = gameObject.GetComponent<GameManeger>().PopStack();
                 Destroy(money.gameObject);
             }
             gameObject.GetComponent<GameManeger>().stackSizeMax = gameObject.GetComponent<GameManeger>().stackSizeMax + stackIncrease;
             stackFlag++;
             tempStack = stackList[stackFlag];
+            stackButtonText.GetComponent<Text>().text = tempStack.ToString() + "$";
         }
     }
 
-    void spendForSpeed()
+    public void spendForSpeed()
     {
         if(speedList.Count> (speedFlag + 1))
         {
@@ -58,6 +62,7 @@ public class UpgradeUIManeger : MonoBehaviour
             gameObject.GetComponent<GameManeger>().PlayerSpeed += speedIncrease; 
             speedFlag++;
             tempSpeed = speedList[speedFlag];
+            speedButtonText.GetComponent<Text>().text = tempSpeed.ToString() + "$";
         }
     }
     
