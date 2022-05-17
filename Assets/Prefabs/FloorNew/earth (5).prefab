@@ -258,6 +258,7 @@ MonoBehaviour:
     type: 3}
   waitSeconds: 2.4
   isWall: 0
+  AIPlayer: {fileID: 919132149155446097, guid: 37f72f7d0d075e14eba82d0aefdecd8f, type: 3}
 --- !u!65 &2087354519534221532
 BoxCollider:
   m_ObjectHideFlags: 0
