@@ -27,12 +27,19 @@ public class AIController : MonoBehaviour
         {
             objDist = false;
             float temp = Vector3.Distance(gameObject.transform.position , electric[0].transform.position);
+            int tempObj = 0;
             for (int i = 0; i < electric.Capacity; i++)
             {
-                if (electric[i]) ;
+                float dist = Vector3.Distance(gameObject.transform.position, electric[i].transform.position);
+                if (dist < temp)
+                {
+                    temp = dist;
+                    tempObj = i;
+                }
             }
-            
-            
+
+            navMesh.destination = electric[tempObj].gameObject.transform.position;
+
         }
         else
         {
