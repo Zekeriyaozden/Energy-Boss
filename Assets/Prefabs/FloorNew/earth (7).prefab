@@ -135,7 +135,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dca632ba60c9b2f4188d8b986693ddb4, type: 2}
+  - {fileID: 2100000, guid: a2f4ec22e8b303d4796e2e6ed8a4d5cd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -377,6 +377,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Particle
       objectReference: {fileID: 0}
+    - target: {fileID: 2487668003393322387, guid: a567ff2691ad52146bc6486f22e73de5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2f4ec22e8b303d4796e2e6ed8a4d5cd, type: 2}
     - target: {fileID: 2487668003393322389, guid: a567ff2691ad52146bc6486f22e73de5,
         type: 3}
       propertyPath: m_RootOrder
