@@ -15,10 +15,12 @@ public class UpgradeAreaController : MonoBehaviour
     public bool isWall;
     private bool flag;
     private bool flagWall;
+    private GameObject AIPlayer;
     void Start()
     {
         flag = true;
         flagWall = false;
+        AIPlayer = GameObject.Find("AI Character");
     }
     
     
@@ -68,6 +70,7 @@ public class UpgradeAreaController : MonoBehaviour
         // x - 1.4
         // y + 1.1
         // z - 0.2
+        AIPlayer.GetComponent<AIController>().objList.Remove(gameObject);
         Destroy(gameObject);
     }
 
