@@ -22,9 +22,11 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UpgradeUIManeger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyCollectToAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneySpawnController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ParticleController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AIStack.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -45,6 +47,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeUIManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/AIStack.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectToAI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
     </changedPaths>
@@ -110,7 +114,7 @@
       <workItem from="1652438478469" duration="12796000" />
       <workItem from="1652514695762" duration="4636000" />
       <workItem from="1652782180457" duration="7054000" />
-      <workItem from="1652949141059" duration="2300000" />
+      <workItem from="1652949141059" duration="11566000" />
     </task>
     <servers />
   </component>
@@ -121,5 +125,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/AIController.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\Maleriya\Desktop\Pigeon Gaming\Energy-Boss\Assets\Scripts\AIController.cs" initialLine="27" containingFunctionPresentation="method 'swapTarget'">
+            <startOffsets>
+              <option value="1107" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1108" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
