@@ -78,7 +78,8 @@ public class AIController : MonoBehaviour
         }
 
         navMesh.destination = electric[flag].transform.position;
-        if (Vector3.Distance(gameObject.transform.position, electric[flag].transform.position) < 2f)
+/*
+ *         if (Vector3.Distance(gameObject.transform.position, electric[flag].transform.position) < 2f)
         {
             
             if (stackSize == 0)
@@ -86,13 +87,19 @@ public class AIController : MonoBehaviour
                 swapTarget(true);
             }
         }
+ */
     }
 
     IEnumerator toObjC()
     {
         while (true)
         {
+            
             navMesh.destination = objList[0].gameObject.transform.position;
+            if (objList[0].gameObject.GetComponent<UpgradeAreaController>().cost == 0)
+            {
+                break;
+            }
             if (stackSize > 0)
             {
                 yield return new WaitForSeconds(moneyPopSpeed);
@@ -115,13 +122,15 @@ public class AIController : MonoBehaviour
     
     public void MoneySpend(Transform target)
     {
-        if (stackSize > 0)
+        if (stackSize > 0 && target.gameObject.GetComponent<UpgradeAreaController>().cost > 0)
         {
             GameObject obj = moneyStack.Pop();
             obj.gameObject.transform.SetParent(null);
             obj.AddComponent<MoneyController>();
             obj.GetComponent<MoneyController>().target = target;
             obj.GetComponent<MoneyController>().spendSpeed = GameObject.Find("GameManeger").GetComponent<GameManeger>().spendSpeed;
+            target.gameObject.GetComponent<UpgradeAreaController>().cost =
+                target.gameObject.GetComponent<UpgradeAreaController>().cost - 100;
         }
     }
     
@@ -192,6 +201,7 @@ public class AIController : MonoBehaviour
 
         if (other.gameObject.tag == "Upgrade")
         {
+            Debug.Log("onTrigEnter");
             StartCoroutine(toObjC());
             onTrigger = true;
         }

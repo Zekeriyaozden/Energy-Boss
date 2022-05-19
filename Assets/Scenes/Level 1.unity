@@ -3850,7 +3850,7 @@ MonoBehaviour:
   stackSize: 0
   electric:
   - {fileID: 1584147810}
-  maxStackSize: 11
+  maxStackSize: 6
   speed: 0.58
   isWorking: 0
   objDist: 0
