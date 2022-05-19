@@ -48,8 +48,8 @@
       <option value="$PROJECT_DIR$/Assets/AIStack.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectToAI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneySpawnController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectToAI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
     </changedPaths>
   </component>
@@ -114,7 +114,7 @@
       <workItem from="1652438478469" duration="12796000" />
       <workItem from="1652514695762" duration="4636000" />
       <workItem from="1652782180457" duration="7054000" />
-      <workItem from="1652949141059" duration="15701000" />
+      <workItem from="1652949141059" duration="16392000" />
     </task>
     <servers />
   </component>

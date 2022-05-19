@@ -159,17 +159,20 @@ public class AIController : MonoBehaviour
             if (stackTemp > 0 && maxStackSize > stackSize)
             {
                 GameObject gm = Area.transform.GetChild(stackTemp-1).gameObject;
+                Vector3 temp = gm.transform.position;
                 Destroy(gm.GetComponent<MoneyCollectControl>());
                 Destroy(gm.GetComponent<MoneyCollectEffect>());
-                gm.transform.SetParent(gameObject.transform.GetChild(2));
+                Destroy(gm.GetComponent<MoneySpawnController>());
+                gm.transform.position = temp;
+                yield return new WaitForSeconds(stackSpawnWait);
                 moneyStack.Push(gm);
                 gm.transform.rotation = referanceMoney.gameObject.transform.rotation;
                 gm.GetComponent<BoxCollider>().enabled = false;
                 Debug.Log(gm.transform.position);
-                yield return new WaitForSeconds(stackSpawnWait);
                 gm.AddComponent<MoneyCollectToAI>();
                 gm.GetComponent<MoneyCollectToAI>().referanceObj = referanceMoney;
                 gm.GetComponent<MoneyCollectToAI>().collectSize = stackSize;
+                gm.transform.SetParent(gameObject.transform.GetChild(2));
             }
             else
             {
