@@ -1,8 +1,26 @@
 fileFormatVersion: 2
-guid: 7f4ef9f92ec109b4489ec24dbd36b35f
+guid: 7735fa4b2aedeaf418a9d82eb10deff7
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 560416272029982150
+    second: TextAction
+  - first:
+      74: -7612595441694510313
+    second: Text|CircleAction
+  - first:
+      74: -1121051007968218131
+    second: Text|CircleAction.001
+  - first:
+      74: 1372909318744052792
+    second: Text|CircleAction.002
+  - first:
+      74: 7577023776800831682
+    second: Text|CircleAction.003
+  - first:
+      74: -5016124314966640817
+    second: Text|TextAction
   externalObjects: {}
   materials:
     materialImportMode: 1
