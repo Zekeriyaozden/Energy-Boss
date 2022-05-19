@@ -8,6 +8,13 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AIStack.cs" t="Include" />
+        <e p="HyperCasualBase" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="blur_shader" t="Include">
+              <e p="GrabPass.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Joystick Pack" t="Include">
           <e p="Examples" t="Include">
             <e p="JoystickPlayerExample.cs" t="Include" />

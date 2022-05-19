@@ -96,18 +96,16 @@ public class AIController : MonoBehaviour
             if (stackSize > 0)
             {
                 yield return new WaitForSeconds(moneyPopSpeed);
+                Debug.Log("toObjC");
                 MoneySpend(objList[0].gameObject.transform);
             }
             else
             {
+                Debug.Log(stackSize + "stackSize");
                 break;
             }
         }
-
         objDist = true;
-
-
-
     }
     
     private void toObj()
@@ -166,7 +164,7 @@ public class AIController : MonoBehaviour
                 yield return new WaitForSeconds(stackSpawnWait);
             }
 
-            if (stackTemp == maxStackSize)
+            if (stackSize == maxStackSize)
             {
                 objDist = false;
                 break;
@@ -194,7 +192,8 @@ public class AIController : MonoBehaviour
 
         if (other.gameObject.tag == "Upgrade")
         {
-            
+            StartCoroutine(toObjC());
+            onTrigger = true;
         }
     }
 
@@ -207,7 +206,7 @@ public class AIController : MonoBehaviour
 
         if (other.gameObject.tag == "Upgrade")
         {
-            
+            onTrigger = false;
         }
     }
 }
