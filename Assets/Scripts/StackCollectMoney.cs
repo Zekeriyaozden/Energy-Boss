@@ -29,6 +29,7 @@ public class StackCollectMoney : MonoBehaviour
             (GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize - 1))
         {
             GameObject gm = gameObject.transform.GetChild(stackTemp-1).gameObject;
+            gm.transform.SetParent(null);
             GameObject.Find("GameManeger").GetComponent<GameManeger>().PushStack(gm);
             gm.transform.SetParent(GameObject.Find("GameManeger").GetComponent<GameManeger>().collectObj.transform);
             gm.transform.rotation = GameObject.Find("GameManeger").GetComponent<GameManeger>().referanceObj.transform.rotation;

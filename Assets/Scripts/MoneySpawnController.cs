@@ -28,6 +28,11 @@ public class MoneySpawnController : MonoBehaviour
             tempPos2 = Vector3.Lerp(tempObj, target , interpolate);
             gameObject.transform.position = Vector3.Lerp(tempPos1,tempPos2, interpolate);
         }
+
+        if (interpolate >= 1)
+        {
+            Destroy(gameObject.GetComponent<MoneySpawnController>());
+        }
         
     }
 }

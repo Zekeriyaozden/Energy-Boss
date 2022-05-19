@@ -159,10 +159,13 @@ public class AIController : MonoBehaviour
             if (stackTemp > 0 && maxStackSize > stackSize)
             {
                 GameObject gm = Area.transform.GetChild(stackTemp-1).gameObject;
-                moneyStack.Push(gm);
+                Destroy(gm.GetComponent<MoneyCollectControl>());
+                Destroy(gm.GetComponent<MoneyCollectEffect>());
                 gm.transform.SetParent(gameObject.transform.GetChild(2));
+                moneyStack.Push(gm);
                 gm.transform.rotation = referanceMoney.gameObject.transform.rotation;
                 gm.GetComponent<BoxCollider>().enabled = false;
+                Debug.Log(gm.transform.position);
                 yield return new WaitForSeconds(stackSpawnWait);
                 gm.AddComponent<MoneyCollectToAI>();
                 gm.GetComponent<MoneyCollectToAI>().referanceObj = referanceMoney;
@@ -178,7 +181,6 @@ public class AIController : MonoBehaviour
                 objDist = false;
                 break;
             }
-
         }
         if (stackSize == maxStackSize)
         {
@@ -195,13 +197,14 @@ public class AIController : MonoBehaviour
     {
         if (other.gameObject.tag == "moneyParent")
         {
+            Debug.Log("onTrigEnterMoneyParent");
             StartCoroutine(moneyCollect(other.gameObject));
             onTrigger = true;
         }
 
         if (other.gameObject.tag == "Upgrade")
         {
-            Debug.Log("onTrigEnter");
+            Debug.Log("onTrigEnterUpdate");
             StartCoroutine(toObjC());
             onTrigger = true;
         }
