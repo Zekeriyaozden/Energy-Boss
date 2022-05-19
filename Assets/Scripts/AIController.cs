@@ -20,6 +20,7 @@ public class AIController : MonoBehaviour
         isWorking = false;
         navMesh = gameObject.GetComponent<NavMeshAgent>();
         navMesh.destination = electric[0].transform.GetChild(4).transform.position;
+        Debug.Log(electric[0].transform.GetChild(4).name);
         objDist = true;
     }
 
@@ -52,6 +53,7 @@ public class AIController : MonoBehaviour
     
     void Update()
     {
+        navMesh.destination = electric[0].transform.GetChild(4).transform.position;
         //Debug.Log(Vector3.Distance(gameObject.transform.position , objList[0].gameObject.transform.position));
         //distance<2;
         if (Vector3.Distance(gameObject.transform.position, objList[0].gameObject.transform.position) < 2f)
