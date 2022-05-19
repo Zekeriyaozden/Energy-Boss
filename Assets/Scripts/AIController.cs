@@ -19,6 +19,8 @@ public class AIController : MonoBehaviour
     {
         isWorking = false;
         navMesh = gameObject.GetComponent<NavMeshAgent>();
+        navMesh.destination = electric[0].transform.GetChild(4).transform.position;
+        objDist = true;
     }
 
     void swapTarget(bool flag)
@@ -50,7 +52,7 @@ public class AIController : MonoBehaviour
     
     void Update()
     {
-        Debug.Log(Vector3.Distance(gameObject.transform.position , objList[0].gameObject.transform.position));
+        //Debug.Log(Vector3.Distance(gameObject.transform.position , objList[0].gameObject.transform.position));
         //distance<2;
         if (Vector3.Distance(gameObject.transform.position, objList[0].gameObject.transform.position) < 2f)
         {
@@ -67,9 +69,7 @@ public class AIController : MonoBehaviour
             for (int i = 0; i < objList.Capacity; i++)
             {
                 Debug.Log(objList.Capacity);
-           
-                navMesh.destination = objList[0].gameObject.transform.position;
-            
+                //navMesh.destination = objList[0].gameObject.transform.position;
             }
         }
     }

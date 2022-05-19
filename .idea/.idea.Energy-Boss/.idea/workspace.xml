@@ -45,8 +45,8 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeUIManeger.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -109,7 +109,8 @@
       <workItem from="1652203101421" duration="3051000" />
       <workItem from="1652438478469" duration="12796000" />
       <workItem from="1652514695762" duration="4636000" />
-      <workItem from="1652782180457" duration="6743000" />
+      <workItem from="1652782180457" duration="7054000" />
+      <workItem from="1652949141059" duration="327000" />
     </task>
     <servers />
   </component>
