@@ -175,19 +175,19 @@ public class AIController : MonoBehaviour
                 GameObject gm = Area.transform.GetChild(stackTemp-1).gameObject;
                 gm.transform.SetParent(null);
                 Vector3 temp = gm.transform.position;
+/*
                 Destroy(gm.GetComponent<MoneyCollectControl>());
                 Destroy(gm.GetComponent<MoneyCollectEffect>());
                 Destroy(gm.GetComponent<MoneySpawnController>());
+ */
                 gm.transform.position = temp;
                 moneyStack.Push(gm);
                 gm.transform.rotation = referanceMoney.gameObject.transform.rotation;
-                gm.GetComponent<BoxCollider>().enabled = false;
-                Debug.Log(gm.transform.position);
                 gm.AddComponent<MoneyCollectToAI>();
                 gm.GetComponent<MoneyCollectToAI>().referanceObj = referanceMoney;
                 gm.GetComponent<MoneyCollectToAI>().collectSize = stackSize;
-                yield return new WaitForSeconds(stackSpawnWait);
                 gm.transform.SetParent(gameObject.transform.GetChild(2));
+                yield return new WaitForSeconds(stackSpawnWait);
             }
             else
             {

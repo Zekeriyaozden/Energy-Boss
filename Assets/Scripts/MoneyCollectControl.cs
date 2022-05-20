@@ -19,7 +19,6 @@ public class MoneyCollectControl : MonoBehaviour
     void Update()
     {
         collectSize = gameManeger.GetComponent<GameManeger>().collectSize;
-
     }
 
     private void OnTriggerEnter(Collider other)

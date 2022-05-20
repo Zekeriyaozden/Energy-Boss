@@ -23,6 +23,7 @@ public class HireAreaController : MonoBehaviour
         AI.gameObject.GetComponent<AIController>().isWorking = true;
         Destroy(UI.gameObject);
         Destroy(gameObject.GetComponent<Collider>());
+        Destroy(gameObject);
     }
 
     // Update is called once per frame
