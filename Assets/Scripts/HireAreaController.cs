@@ -10,17 +10,25 @@ public class HireAreaController : MonoBehaviour
     public GameObject AI;
     public GameObject UI;
     public int Price;
+    private GameObject money;
+    private GameObject gameManeger;
     
     void Start()
     {
         UI.gameObject.transform.GetChild(0).transform.GetChild(3).transform.GetChild(0).GetComponent<Text>().text =
-            Price.ToString() + "$";
+            (Price).ToString() + "$";
+        gameManeger = GameObject.Find("GameManeger");
     }
 
 
     public void onClick()
     {
         AI.gameObject.GetComponent<AIController>().isWorking = true;
+        for (int i = 0; i < Price / 100; i++)
+        {
+            money = gameManeger.GetComponent<GameManeger>().PopStack();
+            Destroy(money.gameObject);
+        }
         Destroy(UI.gameObject);
         Destroy(gameObject.GetComponent<Collider>());
         Destroy(gameObject);
@@ -29,7 +37,7 @@ public class HireAreaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize * 100 < Price)
+        if ((GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize - 1) * 100 < Price)
         {
             UI.gameObject.transform.GetChild(0).transform.GetChild(3).GetComponent<Button>().interactable = false;
         }
