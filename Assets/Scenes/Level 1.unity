@@ -3926,7 +3926,7 @@ PrefabInstance:
     - target: {fileID: 7195722243449722823, guid: e76b37febdad6774bb9ad8f4367b00b8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.74
+      value: 51.38
       objectReference: {fileID: 0}
     - target: {fileID: 7195722243449722823, guid: e76b37febdad6774bb9ad8f4367b00b8,
         type: 3}
@@ -6393,6 +6393,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663479032135405266, guid: ce412b22a92af2744b4bbe1b9e27d52d,
+        type: 3}
+      propertyPath: cost
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6707208669653126856, guid: ce412b22a92af2744b4bbe1b9e27d52d,
         type: 3}
@@ -11572,7 +11577,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.990566, g: 0.79432184, b: 0.9524075, a: 0}
+  m_BackGroundColor: {r: 0.5803922, g: 0.8745098, b: 0.8980392, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -16583,7 +16588,7 @@ PrefabInstance:
     - target: {fileID: 6663479032135405266, guid: ce412b22a92af2744b4bbe1b9e27d52d,
         type: 3}
       propertyPath: cost
-      value: 200
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6707208669653126856, guid: ce412b22a92af2744b4bbe1b9e27d52d,
         type: 3}
@@ -19997,6 +20002,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6663479032135405266, guid: ce412b22a92af2744b4bbe1b9e27d52d,
+        type: 3}
+      propertyPath: cost
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6707208669653126856, guid: ce412b22a92af2744b4bbe1b9e27d52d,
         type: 3}
