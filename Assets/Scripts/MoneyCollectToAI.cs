@@ -22,7 +22,7 @@ public class MoneyCollectToAI : MonoBehaviour
         speed = GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSpeed;
         thisPos = gameObject.transform.position;
         tempObj = thisPos;
-        tempObj.y = 2f;
+        tempObj.y = 4f;
         tempObj.x = thisPos.x - 4f;
         
     }

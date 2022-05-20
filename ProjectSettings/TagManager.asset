@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Upgrade
   - moneyParent
+  - HireArea
   layers:
   - Default
   - TransparentFX

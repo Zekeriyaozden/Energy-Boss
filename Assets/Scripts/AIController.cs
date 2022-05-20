@@ -26,7 +26,6 @@ public class AIController : MonoBehaviour
     {
         isWorking = false;
         navMesh = gameObject.GetComponent<NavMeshAgent>();
-        navMesh.destination = electric[0].transform.GetChild(4).transform.position;
         objDist = true;
         stackSpawnWait = GameObject.Find("GameManeger").GetComponent<GameManeger>().stackWait;
     }
@@ -137,15 +136,30 @@ public class AIController : MonoBehaviour
     
     void Update()
     {
-        stackSize = moneyStack.Count;
-        if (objDist)
+        if (isWorking)
         {
-            findCloserElectric();
-        }
+            gameObject.GetComponent<Animator>().SetBool("isWorking",true);
+            if (Vector3.Distance(gameObject.GetComponent<NavMeshAgent>().destination, gameObject.transform.position) <
+                1)
+            {
+                gameObject.GetComponent<Animator>().SetBool("run",false);
+                gameObject.GetComponent<Animator>().SetBool("idle",true);
+            }
+            else
+            {
+                gameObject.GetComponent<Animator>().SetBool("run",true);
+                gameObject.GetComponent<Animator>().SetBool("idle",false);
+            }
+            stackSize = moneyStack.Count;
+            if (objDist)
+            {
+                findCloserElectric();
+            }
 
-        if (!objDist)
-        {
-            toObj();
+            if (!objDist)
+            {
+                toObj();
+            }
         }
     }
     
@@ -159,12 +173,12 @@ public class AIController : MonoBehaviour
             if (stackTemp > 0 && maxStackSize > stackSize)
             {
                 GameObject gm = Area.transform.GetChild(stackTemp-1).gameObject;
+                gm.transform.SetParent(null);
                 Vector3 temp = gm.transform.position;
                 Destroy(gm.GetComponent<MoneyCollectControl>());
                 Destroy(gm.GetComponent<MoneyCollectEffect>());
                 Destroy(gm.GetComponent<MoneySpawnController>());
                 gm.transform.position = temp;
-                yield return new WaitForSeconds(stackSpawnWait);
                 moneyStack.Push(gm);
                 gm.transform.rotation = referanceMoney.gameObject.transform.rotation;
                 gm.GetComponent<BoxCollider>().enabled = false;
@@ -172,6 +186,7 @@ public class AIController : MonoBehaviour
                 gm.AddComponent<MoneyCollectToAI>();
                 gm.GetComponent<MoneyCollectToAI>().referanceObj = referanceMoney;
                 gm.GetComponent<MoneyCollectToAI>().collectSize = stackSize;
+                yield return new WaitForSeconds(stackSpawnWait);
                 gm.transform.SetParent(gameObject.transform.GetChild(2));
             }
             else
@@ -179,12 +194,17 @@ public class AIController : MonoBehaviour
                 yield return new WaitForSeconds(stackSpawnWait);
             }
 
-            if (stackSize == maxStackSize)
-            {
-                objDist = false;
-                break;
-            }
+            
+                
+                if (stackSize == maxStackSize)
+                {
+                    break;
+                }
+                
+            
         }
+        objDist = false;
+        Debug.Log("moneyCollect");
         if (stackSize == maxStackSize)
         {
             onTrigger = false;
