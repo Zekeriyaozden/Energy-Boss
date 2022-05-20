@@ -2348,7 +2348,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: a94cae2284278ad498df8a0d9a04dffe, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -16533,7 +16533,7 @@ PrefabInstance:
     - target: {fileID: 6663479032135405266, guid: ce412b22a92af2744b4bbe1b9e27d52d,
         type: 3}
       propertyPath: cost
-      value: 500
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6707208669653126856, guid: ce412b22a92af2744b4bbe1b9e27d52d,
         type: 3}
@@ -19206,17 +19206,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fdf19e41b41378346bf6a5c6b7ac01cb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000005760116
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdf19e41b41378346bf6a5c6b7ac01cb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071067
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdf19e41b41378346bf6a5c6b7ac01cb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.000000057601152
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdf19e41b41378346bf6a5c6b7ac01cb,
         type: 3}
@@ -19226,7 +19226,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: fdf19e41b41378346bf6a5c6b7ac01cb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fdf19e41b41378346bf6a5c6b7ac01cb,
         type: 3}
@@ -20627,7 +20627,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 9b11e87b39493e940bf14e63a42b1bde, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
