@@ -66,6 +66,7 @@ public class UpgradeAreaController : MonoBehaviour
     {
         yield return new WaitForSeconds(waitSeconds);
         GameObject gm = Instantiate(energyItem, gameObject.transform.position + new Vector3(-1.4f, 0.45f, -0.2f), Quaternion.identity);
+        GameObject.Find("GameManeger").GetComponent<GameManeger>().countLock++;
         AIPlayer.GetComponent<AIController>().electric.Add(gm.gameObject.transform.GetChild(4).gameObject);
         gm.transform.eulerAngles = new Vector3(0, 180, 0);
         // x - 1.4

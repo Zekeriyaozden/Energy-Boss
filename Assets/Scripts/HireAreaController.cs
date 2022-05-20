@@ -13,6 +13,7 @@ public class HireAreaController : MonoBehaviour
     private GameObject money;
     private GameObject gameManeger;
     
+    
     void Start()
     {
         UI.gameObject.transform.GetChild(0).transform.GetChild(3).transform.GetChild(0).GetComponent<Text>().text =

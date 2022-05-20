@@ -13,6 +13,7 @@ public class GameManeger : MonoBehaviour
     public float PlayerSpeed;
     public float moneySpawnSpeed;
     public int stackSizeMax;
+    public int countLock;
     public float stackWait;
     [Range(0,5)]
     public float collectSpeed;
@@ -23,6 +24,7 @@ public class GameManeger : MonoBehaviour
     void Start()
     {
         collectSize = 0;
+        countLock = 0;
     }
     void Update()
     {
