@@ -9,7 +9,6 @@ public class AIController : MonoBehaviour
     public Stack<GameObject> moneyStack = new Stack<GameObject>();
     public GameObject referanceMoney;
     public float moneyPopSpeed;
-    public bool onTrigger;
     private NavMeshAgent navMesh;
     public List<GameObject> objList = new List<GameObject>();
     private GameObject destObj;
@@ -210,10 +209,7 @@ public class AIController : MonoBehaviour
         }
         objDist = false;
         Debug.Log("moneyCollect");
-        if (stackSize == maxStackSize)
-        {
-            onTrigger = false;
-        }
+
         
         
     }
@@ -226,14 +222,12 @@ public class AIController : MonoBehaviour
         {
             Debug.Log("onTrigEnterMoneyParent");
             StartCoroutine(moneyCollect(other.gameObject));
-            onTrigger = true;
         }
 
         if (other.gameObject.tag == "Upgrade")
         {
             Debug.Log("onTrigEnterUpdate");
             StartCoroutine(toObjC());
-            onTrigger = true;
         }
     }
 
@@ -241,12 +235,12 @@ public class AIController : MonoBehaviour
     {
         if (other.gameObject.tag == "moneyParent")
         {
-            onTrigger = false;
+            objDist = false;
         }
 
         if (other.gameObject.tag == "Upgrade")
         {
-            onTrigger = false;
+            objDist = true;
         }
     }
 }
