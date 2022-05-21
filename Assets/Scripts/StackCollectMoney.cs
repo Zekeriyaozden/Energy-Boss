@@ -13,7 +13,6 @@ public class StackCollectMoney : MonoBehaviour
         stackSpawnWait = GameObject.Find("GameManeger").GetComponent<GameManeger>().stackWait;
         playerOnArea = false;
         stackSize = 0;
-        
     }
 
     // Update is called once per frame
@@ -28,7 +27,6 @@ public class StackCollectMoney : MonoBehaviour
         while (stackTemp > 0 && playerOnArea && GameObject.Find("GameManeger").GetComponent<GameManeger>().stackSizeMax >
             (GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize - 1) && stackTemp <= stackSize)
         {
-            
             GameObject gm = gameObject.transform.GetChild(stackTemp-1).gameObject;
             gm.transform.SetParent(null);
             GameObject.Find("GameManeger").GetComponent<GameManeger>().PushStack(gm);

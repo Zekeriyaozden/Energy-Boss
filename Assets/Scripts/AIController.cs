@@ -17,12 +17,14 @@ public class AIController : MonoBehaviour
     public List<GameObject> electric = new List<GameObject>();
     private GameObject destElect;
     public int maxStackSize;
+    public bool atUpdate;
     public float speed;
     public bool isWorking;
     public bool objDist;
     public GameObject tempElectricObj;
     void Start()
     {
+        atUpdate = false;
         isWorking = false;
         navMesh = gameObject.GetComponent<NavMeshAgent>();
         objDist = true;
@@ -120,7 +122,7 @@ public class AIController : MonoBehaviour
     
     public void MoneySpend(Transform target)
     {
-        if (stackSize > 0 && target.gameObject.GetComponent<UpgradeAreaController>().cost > 0)
+        if (stackSize > 0 && target.gameObject.GetComponent<UpgradeAreaController>().cost > 0 && atUpdate)
         {
             GameObject obj = moneyStack.Pop();
             obj.gameObject.transform.SetParent(null);
@@ -226,6 +228,7 @@ public class AIController : MonoBehaviour
 
         if (other.gameObject.tag == "Upgrade")
         {
+            atUpdate = true;
             Debug.Log("onTrigEnterUpdate");
             StartCoroutine(toObjC());
         }
@@ -240,6 +243,7 @@ public class AIController : MonoBehaviour
 
         if (other.gameObject.tag == "Upgrade")
         {
+            atUpdate = false;
             objDist = true;
         }
     }
