@@ -2085,17 +2085,17 @@ PrefabInstance:
     - target: {fileID: 2388526751167157218, guid: 87e67570ccd928b4b8139ee41fd9d368,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.26
+      value: -19.29
       objectReference: {fileID: 0}
     - target: {fileID: 2388526751167157218, guid: 87e67570ccd928b4b8139ee41fd9d368,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 16.44
+      value: 16.51
       objectReference: {fileID: 0}
     - target: {fileID: 2388526751167157218, guid: 87e67570ccd928b4b8139ee41fd9d368,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 43.58
+      value: 43.65
       objectReference: {fileID: 0}
     - target: {fileID: 2388526751167157218, guid: 87e67570ccd928b4b8139ee41fd9d368,
         type: 3}
@@ -4016,7 +4016,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   referanceMoney: {fileID: 724112273}
   moneyPopSpeed: 0.08
-  onTrigger: 0
   objList:
   - {fileID: 1463076890}
   - {fileID: 1243274265}
@@ -4034,6 +4033,7 @@ MonoBehaviour:
   electric:
   - {fileID: 1584147810}
   maxStackSize: 6
+  atUpdate: 0
   speed: 0.58
   isWorking: 0
   objDist: 0
@@ -25101,7 +25101,7 @@ GameObject:
   - component: {fileID: 201134612312702963}
   m_Layer: 0
   m_Name: earth (3)
-  m_TagString: Upgrade
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 8
