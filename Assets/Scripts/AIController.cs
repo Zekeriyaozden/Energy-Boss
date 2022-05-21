@@ -138,6 +138,10 @@ public class AIController : MonoBehaviour
     {
         if (isWorking)
         {
+            if (stackSize == 0)
+            {
+                //objDist = true;
+            }
             gameObject.GetComponent<Animator>().SetBool("isWorking",true);
             if (Vector3.Distance(gameObject.GetComponent<NavMeshAgent>().destination, gameObject.transform.position) <
                 1)
@@ -209,7 +213,6 @@ public class AIController : MonoBehaviour
         if (stackSize == maxStackSize)
         {
             onTrigger = false;
-            
         }
         
         
