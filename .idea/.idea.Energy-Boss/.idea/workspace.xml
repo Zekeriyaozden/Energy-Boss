@@ -118,7 +118,7 @@
       <workItem from="1652949141059" duration="16594000" />
       <workItem from="1653031810176" duration="3511000" />
       <workItem from="1653039126366" duration="6806000" />
-      <workItem from="1653119161472" duration="1250000" />
+      <workItem from="1653119161472" duration="2668000" />
     </task>
     <servers />
   </component>
@@ -129,24 +129,5 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/AIController.cs</url>
-          <line>33</line>
-          <properties documentPath="C:\Users\Maleriya\Desktop\Pigeon Gaming\Energy-Boss\Assets\Scripts\AIController.cs" initialLine="27" containingFunctionPresentation="method 'swapTarget'">
-            <startOffsets>
-              <option value="1023" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1024" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

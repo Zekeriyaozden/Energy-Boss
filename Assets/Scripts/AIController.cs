@@ -192,6 +192,7 @@ public class AIController : MonoBehaviour
             else
             {
                 yield return new WaitForSeconds(stackSpawnWait);
+                break;
             }
 
             
