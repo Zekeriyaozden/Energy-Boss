@@ -26,8 +26,9 @@ public class StackCollectMoney : MonoBehaviour
     {
         int stackTemp = stackSize;
         while (stackTemp > 0 && playerOnArea && GameObject.Find("GameManeger").GetComponent<GameManeger>().stackSizeMax >
-            (GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize - 1))
+            (GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize - 1) && stackTemp <= stackSize)
         {
+            
             GameObject gm = gameObject.transform.GetChild(stackTemp-1).gameObject;
             gm.transform.SetParent(null);
             GameObject.Find("GameManeger").GetComponent<GameManeger>().PushStack(gm);

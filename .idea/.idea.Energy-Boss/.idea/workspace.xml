@@ -43,7 +43,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeUIManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/AIStack.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneySpawnController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectToAI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
@@ -52,6 +51,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/WallControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -118,6 +118,7 @@
       <workItem from="1652949141059" duration="16594000" />
       <workItem from="1653031810176" duration="3511000" />
       <workItem from="1653039126366" duration="6806000" />
+      <workItem from="1653119161472" duration="854000" />
     </task>
     <servers />
   </component>
