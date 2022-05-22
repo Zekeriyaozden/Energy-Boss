@@ -8,16 +8,21 @@ public class UpgradeAreaController : MonoBehaviour
 {
     private GameObject wall;
     public int cost;
+    public int costTemp;
     public GameObject referanceObject;
     public GameObject particle;
     public GameObject energyItem;
     public float waitSeconds;
     public bool isWall;
     private bool flag;
+    private float size;
+    public GameObject image;
     private bool flagWall;
     private GameObject AIPlayer;
     void Start()
     {
+        size = 1f;
+        costTemp = cost;
         flag = true;
         flagWall = false;
         AIPlayer = GameObject.Find("AI Character");
@@ -27,7 +32,8 @@ public class UpgradeAreaController : MonoBehaviour
     
     void Update()
     {
-
+        size = (float.Parse(costTemp.ToString()) - float.Parse(cost.ToString())) / float.Parse(costTemp.ToString());
+        image.GetComponent<Image>().fillAmount = (1f - size);
         if (flagWall)
         {
             Destroy(energyItem.gameObject);
@@ -41,7 +47,15 @@ public class UpgradeAreaController : MonoBehaviour
                 StartCoroutine(wallTrans());
             }
         }
-        referanceObject.GetComponent<Text>().text = cost.ToString() + "$";
+
+        if (cost >= 1000)
+        {
+            referanceObject.GetComponent<Text>().text = "$" + (cost / 1000).ToString() + "." + ((cost % 1000)/100).ToString() + "K";
+        }
+        else
+        {
+            referanceObject.GetComponent<Text>().text ="$" + cost.ToString();   
+        }
         if (!isWall && cost == 0 && flag )
         {
             particleSpawn();
