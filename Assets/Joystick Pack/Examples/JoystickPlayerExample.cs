@@ -80,6 +80,8 @@ public class JoystickPlayerExample : MonoBehaviour
         {
             gameObject.GetComponent<Animator>().SetBool("Idle",true);
             gameObject.GetComponent<Animator>().SetBool("WalkingWithoutLift",false);
+            
+
         }else if (isMoving)
         {
             gameObject.GetComponent<Animator>().SetBool("WalkingWithoutLift",true);

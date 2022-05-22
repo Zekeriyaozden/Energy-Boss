@@ -36,7 +36,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/EnergyBankController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaUIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
       <option value="$PROJECT_DIR$/Assets/UIUpgradeArea.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIUpgradeArea.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" />
@@ -52,6 +51,7 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ButtonControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -119,7 +119,7 @@
       <workItem from="1653031810176" duration="3511000" />
       <workItem from="1653039126366" duration="6806000" />
       <workItem from="1653119161472" duration="9217000" />
-      <workItem from="1653221905609" duration="2175000" />
+      <workItem from="1653221905609" duration="2967000" />
     </task>
     <servers />
   </component>
