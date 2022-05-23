@@ -31,7 +31,7 @@ public class EnergyBankController : MonoBehaviour
         {
             if (moneyCount % 3 == 0)
             {
-                GameObject gm = Instantiate(referanceObj, gameObject.transform.position, Quaternion.identity, parentObj);
+                GameObject gm = Instantiate(referanceObj, gameObject.transform.position + new Vector3(0,-5,0), Quaternion.identity, parentObj);
                 int num = parentObj.childCount / 3;
                 gm.AddComponent<MoneySpawnController>();
                 gm.GetComponent<MoneySpawnController>().target = gameObject.transform.position + new Vector3(-1.8f,0,-3.621f) + ((Vector3.up * 0.2f) * num);
@@ -41,6 +41,7 @@ public class EnergyBankController : MonoBehaviour
                 //1 = gobj - 1.8
                 //2 = gobj
                 //3 = gobj + 1.8
+                gm.tag = "Respawn";
             }
             else if (moneyCount % 3 == 1)
             {
@@ -50,6 +51,7 @@ public class EnergyBankController : MonoBehaviour
                 gm.GetComponent<MoneySpawnController>().target = gameObject.transform.position + new Vector3(0,0,-3.621f) + ((Vector3.up * 0.2f) * num);
                 gm.GetComponent<MoneySpawnController>().tempObj = gm.GetComponent<MoneySpawnController>().target + new Vector3(0,5f,0);
                 gm.GetComponent<MoneySpawnController>().speed = speed;
+                gm.tag = "Respawn";
             }
             else if (moneyCount % 3 == 2)
             {
@@ -59,6 +61,7 @@ public class EnergyBankController : MonoBehaviour
                 gm.GetComponent<MoneySpawnController>().target = gameObject.transform.position + new Vector3(1.8f,0,-3.621f) + ((Vector3.up * 0.2f) * num);
                 gm.GetComponent<MoneySpawnController>().tempObj = gm.GetComponent<MoneySpawnController>().target + new Vector3(0,5f,0);
                 gm.GetComponent<MoneySpawnController>().speed = speed;
+                gm.tag = "Respawn";
             }
         }
             }

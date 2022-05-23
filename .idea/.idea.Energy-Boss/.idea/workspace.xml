@@ -20,6 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UpgradeUIManeger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FogControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyCollectEffect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MoneyCollectToAI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -33,7 +34,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/DenemeLerp.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ParticleController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/EnergyBankController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaUIController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
       <option value="$PROJECT_DIR$/Assets/UIUpgradeArea.cs" />
@@ -44,14 +44,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneySpawnController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectToAI.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneyCollectControl.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/HireAreaController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/WallControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/StackCollectMoney.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ButtonControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Init1Controller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HireAreaController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeAreaController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnergyBankController.cs" />
       <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/FogControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/WallControl.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -120,6 +124,7 @@
       <workItem from="1653039126366" duration="6806000" />
       <workItem from="1653119161472" duration="9217000" />
       <workItem from="1653221905609" duration="2967000" />
+      <workItem from="1653309658932" duration="9508000" />
     </task>
     <servers />
   </component>

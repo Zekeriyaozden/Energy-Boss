@@ -489,7 +489,6 @@ GameObject:
   - component: {fileID: 223529885483236891}
   - component: {fileID: 6587305055531823176}
   - component: {fileID: 5006468825236562973}
-  - component: {fileID: 1184383673461694230}
   m_Layer: 0
   m_Name: Energy Bank with Animation NEW (1) 2
   m_TagString: Untagged
@@ -600,24 +599,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.47268, y: 3.575333, z: 9.141543}
   m_Center: {x: -1.9326556, y: 1.7731053, z: 0.77295995}
---- !u!114 &1184383673461694230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5032415422899346264}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9b680263c80f1d4a9fbd056f10a5275, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitSeconds: 0.25
-  moneyCount: 0
-  referanceObj: {fileID: 1730363703027760219, guid: da8d92a826267f744a718548737683b5,
-    type: 3}
-  speed: 1.2
-  collectSize: 50
 --- !u!1 &5232514598847922214
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,11 +765,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 4.445, y: 1.15, z: 3.09}
+  m_Extents: {x: 6.26, y: 1.975, z: 4.295}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: -0.45, y: 1.29, z: 0.57}
+  m_Center: {x: -0.45, y: 1.29, z: -0.81}
   m_TimeToStationary: 0.5
 --- !u!1 &7802645711552413936
 GameObject:
@@ -1268,6 +1249,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cb8f15614891a44e885e53665c76eff, type: 3}
+--- !u!224 &8192736397425440486 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8550892512096103009, guid: 5cb8f15614891a44e885e53665c76eff,
+    type: 3}
+  m_PrefabInstance: {fileID: 511349013115427975}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &3930318360529140860 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3572452429133062395, guid: 5cb8f15614891a44e885e53665c76eff,
@@ -1277,12 +1264,6 @@ RectTransform:
 --- !u!1 &3930318361772858439 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3572452427889590464, guid: 5cb8f15614891a44e885e53665c76eff,
-    type: 3}
-  m_PrefabInstance: {fileID: 511349013115427975}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &8192736397425440486 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8550892512096103009, guid: 5cb8f15614891a44e885e53665c76eff,
     type: 3}
   m_PrefabInstance: {fileID: 511349013115427975}
   m_PrefabAsset: {fileID: 0}

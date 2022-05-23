@@ -135,11 +135,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 4.445, y: 1.15, z: 3.09}
+  m_Extents: {x: 4.925, y: 1.78, z: 3.535}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
-  m_Center: {x: -0.45, y: 1.29, z: 0.57}
+  m_Center: {x: -0.45, y: 1.29, z: -0.34}
   m_TimeToStationary: 0.5
 --- !u!1 &1440795826986585946
 GameObject:

@@ -341,7 +341,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 0.2, y: 1.33, z: 7.12}
+  m_Extents: {x: 0.47, y: 1.33, z: 10.25}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -359,7 +359,6 @@ GameObject:
   - component: {fileID: 3523243344904608633}
   - component: {fileID: 7536210015602791722}
   - component: {fileID: 8540439833979371903}
-  - component: {fileID: 2562819447988550260}
   m_Layer: 0
   m_Name: Energy Bank with Animation NEW (1) 1 (2)
   m_TagString: Untagged
@@ -470,24 +469,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.2705574, y: 3.575333, z: 9.321861}
   m_Center: {x: 0.18657494, y: 1.7731054, z: 0.31289673}
---- !u!114 &2562819447988550260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8514489620316683834}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9b680263c80f1d4a9fbd056f10a5275, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitSeconds: 0.5
-  moneyCount: 0
-  referanceObj: {fileID: 1730363703027760219, guid: da8d92a826267f744a718548737683b5,
-    type: 3}
-  speed: 1.2
-  collectSize: 35
 --- !u!1001 &511349013115427975
 PrefabInstance:
   m_ObjectHideFlags: 0

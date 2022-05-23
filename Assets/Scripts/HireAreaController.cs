@@ -16,7 +16,7 @@ public class HireAreaController : MonoBehaviour
     
     void Start()
     {
-        UI.gameObject.transform.GetChild(0).transform.GetChild(3).transform.GetChild(0).GetComponent<Text>().text =
+        UI.gameObject.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text =
             (Price).ToString() + "$";
         gameManeger = GameObject.Find("GameManeger");
     }
@@ -40,11 +40,11 @@ public class HireAreaController : MonoBehaviour
     {
         if ((GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize - 1) * 100 < Price)
         {
-            UI.gameObject.transform.GetChild(0).transform.GetChild(3).GetComponent<Button>().interactable = false;
+            UI.gameObject.transform.GetChild(0).transform.GetChild(0).GetComponent<Button>().interactable = false;
         }
         else
         {
-            UI.gameObject.transform.GetChild(0).transform.GetChild(3).GetComponent<Button>().interactable = true;
+            UI.gameObject.transform.GetChild(0).transform.GetChild(0).GetComponent<Button>().interactable = true;
         }
     }
 

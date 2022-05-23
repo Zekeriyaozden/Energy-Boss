@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="FogControl.cs" t="Include" />
         <e p="HyperCasualBase" t="Include">
           <e p="Shaders" t="Include">
             <e p="blur_shader" t="Include">
@@ -46,6 +47,7 @@
           <e p="EnergyBankController.cs" t="Include" />
           <e p="GameManeger.cs" t="Include" />
           <e p="HireAreaController.cs" t="Include" />
+          <e p="Init1Controller.cs" t="Include" />
           <e p="MoneyCollectControl.cs" t="Include" />
           <e p="MoneyCollectEffect.cs" t="Include" />
           <e p="MoneyCollectToAI.cs" t="Include" />

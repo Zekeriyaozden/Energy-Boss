@@ -8,6 +8,7 @@ public class JoystickPlayerExample : MonoBehaviour
     private float speed;
     public Vector3 direction;
     public DynamicJoystick variableJoystick;
+    private bool withMoney;
     public bool isMoving;
     public bool isIdle;
     public bool isMovingWItem;
@@ -16,6 +17,7 @@ public class JoystickPlayerExample : MonoBehaviour
 
     public void Start()
     {
+        withMoney = false;
         speed = GameObject.Find("GameManeger").GetComponent<GameManeger>().PlayerSpeed;
         isMoving = false;
         isIdle = true;
@@ -23,6 +25,14 @@ public class JoystickPlayerExample : MonoBehaviour
 
     public void FixedUpdate()
     {
+        if (GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize > 1)
+        {
+            withMoney = true;
+        }
+        else
+        {
+            withMoney = false;
+        }
         speed = GameObject.Find("GameManeger").GetComponent<GameManeger>().PlayerSpeed;
         direction = Vector3.forward * variableJoystick.Vertical + Vector3.right * variableJoystick.Horizontal;
         isPlayerMoving();
@@ -76,23 +86,41 @@ public class JoystickPlayerExample : MonoBehaviour
 
     private void animControl()
     {
-        if (isIdle)
-        {
-            gameObject.GetComponent<Animator>().SetBool("Idle",true);
-            gameObject.GetComponent<Animator>().SetBool("WalkingWithoutLift",false);
-            
 
-        }else if (isMoving)
+        if (withMoney)
         {
-            gameObject.GetComponent<Animator>().SetBool("WalkingWithoutLift",true);
-            gameObject.GetComponent<Animator>().SetBool("Idle",false);
-        }else if (isMovingWItem)
-        {
-            
-        }else if (isPlayerIdleWItem)
-        {
-            
+            if (isIdle)
+            {
+                gameObject.GetComponent<Animator>().SetBool("IdleWLift",true);
+                gameObject.GetComponent<Animator>().SetBool("Idle",false);
+                gameObject.GetComponent<Animator>().SetBool("WalkingWithoutLift",false);
+                gameObject.GetComponent<Animator>().SetBool("WalkingWLift",false);
+            }else if (isMoving)
+            {
+                gameObject.GetComponent<Animator>().SetBool("WalkingWLift",true);
+                gameObject.GetComponent<Animator>().SetBool("Idle",false);
+                gameObject.GetComponent<Animator>().SetBool("WalkingWithoutLift",false);
+                gameObject.GetComponent<Animator>().SetBool("IdleWLift",false);
+            }
         }
+        else
+        {
+            if (isIdle)
+            {
+                gameObject.GetComponent<Animator>().SetBool("Idle",true);
+                gameObject.GetComponent<Animator>().SetBool("WalkingWithoutLift",false);
+                gameObject.GetComponent<Animator>().SetBool("IdleWLift",false);
+                gameObject.GetComponent<Animator>().SetBool("WalkingWLift",false);
+                
+            }else if (isMoving)
+            {
+                gameObject.GetComponent<Animator>().SetBool("WalkingWithoutLift",true);
+                gameObject.GetComponent<Animator>().SetBool("Idle",false);
+                gameObject.GetComponent<Animator>().SetBool("IdleWLift",false);
+                gameObject.GetComponent<Animator>().SetBool("WalkingWLift",false);
+            }
+        }
+
     }
     
 
