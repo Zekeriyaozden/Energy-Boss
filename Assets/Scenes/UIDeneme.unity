@@ -10180,7 +10180,7 @@ PrefabInstance:
     - target: {fileID: 6137998671571855649, guid: 2b529031f490200468280e5ccd1d95af,
         type: 3}
       propertyPath: cost
-      value: 500
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 6137998671571855649, guid: 2b529031f490200468280e5ccd1d95af,
         type: 3}
@@ -27083,7 +27083,7 @@ PrefabInstance:
     - target: {fileID: 7418534590902789440, guid: 6a9441a7ee853ce45bb3ff8a2bb97978,
         type: 3}
       propertyPath: cost
-      value: 500
+      value: 10000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a9441a7ee853ce45bb3ff8a2bb97978, type: 3}
