@@ -38,6 +38,21 @@ public class HireAreaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+
+        if (Price >= 1000)
+        {
+            UI.gameObject.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = "$" +
+                ((Price) / 1000).ToString() + "." + ((Price % 1000)/100).ToString() + "K";
+        }
+        else
+        {
+            UI.gameObject.transform.GetChild(0).transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text =
+                "$" + Price.ToString();
+        }
+        
+        
+        
         if ((GameObject.Find("GameManeger").GetComponent<GameManeger>().collectSize - 1) * 100 < Price)
         {
             UI.gameObject.transform.GetChild(0).transform.GetChild(0).GetComponent<Button>().interactable = false;

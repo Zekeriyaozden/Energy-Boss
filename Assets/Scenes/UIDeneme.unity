@@ -747,7 +747,7 @@ Transform:
   m_GameObject: {fileID: 60886333}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 69.98, y: 2.42, z: 89.62}
-  m_LocalScale: {x: 49.267178, y: 5.595465, z: 9.682466}
+  m_LocalScale: {x: 52.43868, y: 5.0906925, z: 9.682466}
   m_Children: []
   m_Father: {fileID: 749644457}
   m_RootOrder: 3
@@ -2017,7 +2017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &137449025
 Transform:
   m_ObjectHideFlags: 0
@@ -7996,7 +7996,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &578808050
 Transform:
   m_ObjectHideFlags: 0
@@ -10400,7 +10400,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &749644457
 Transform:
   m_ObjectHideFlags: 0
@@ -13140,6 +13140,8 @@ MonoBehaviour:
   distance: {x: 0, y: 0, z: 0}
   s1: 0
   s2: 0
+  s3: 0
+  s4: 0
   speed: 0.4
 --- !u!1001 &963217413
 PrefabInstance:
@@ -14401,7 +14403,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1013713868
 Transform:
   m_ObjectHideFlags: 0
@@ -19073,7 +19075,7 @@ Transform:
   m_GameObject: {fileID: 1312794184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 69.98, y: 2.42, z: 89.62}
-  m_LocalScale: {x: 49.267178, y: 5.595465, z: 9.682466}
+  m_LocalScale: {x: 52.43868, y: 5.0906925, z: 9.682466}
   m_Children: []
   m_Father: {fileID: 749644457}
   m_RootOrder: 10
@@ -19756,7 +19758,7 @@ Transform:
   m_GameObject: {fileID: 1360951510}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 69.98, y: 2.42, z: 89.62}
-  m_LocalScale: {x: 49.267178, y: 5.595465, z: 9.682466}
+  m_LocalScale: {x: 52.43868, y: 5.0906925, z: 9.682466}
   m_Children: []
   m_Father: {fileID: 749644457}
   m_RootOrder: 8
@@ -21561,7 +21563,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1481393743
 Transform:
   m_ObjectHideFlags: 0
@@ -23291,7 +23293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 11
   Fog: {fileID: 1013713867}
-  cam: {fileID: 0}
+  cam: {fileID: 963194225}
 --- !u!1 &1607414722
 GameObject:
   m_ObjectHideFlags: 0
@@ -24477,7 +24479,7 @@ Transform:
   m_GameObject: {fileID: 1745855825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 69.98, y: 2.42, z: 89.62}
-  m_LocalScale: {x: 49.267178, y: 5.595465, z: 9.682466}
+  m_LocalScale: {x: 52.43868, y: 5.0906925, z: 9.682466}
   m_Children: []
   m_Father: {fileID: 749644457}
   m_RootOrder: 12
@@ -26066,7 +26068,7 @@ Transform:
   m_GameObject: {fileID: 1837938338}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 69.98, y: 2.42, z: 89.62}
-  m_LocalScale: {x: 49.267178, y: 5.595465, z: 9.682466}
+  m_LocalScale: {x: 52.43868, y: 5.0906925, z: 9.682466}
   m_Children: []
   m_Father: {fileID: 749644457}
   m_RootOrder: 7
@@ -28249,7 +28251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2014759102
 Transform:
   m_ObjectHideFlags: 0
@@ -28583,7 +28585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   count: 7
   Fog: {fileID: 578808049}
-  cam: {fileID: 0}
+  cam: {fileID: 963194225}
 --- !u!1 &2033779113
 GameObject:
   m_ObjectHideFlags: 0
@@ -29480,7 +29482,7 @@ Transform:
   m_GameObject: {fileID: 2105174029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 69.98, y: 2.42, z: 89.62}
-  m_LocalScale: {x: 49.267178, y: 5.595465, z: 9.682466}
+  m_LocalScale: {x: 52.43868, y: 5.0906925, z: 9.682466}
   m_Children: []
   m_Father: {fileID: 749644457}
   m_RootOrder: 2
@@ -30107,6 +30109,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 628004612283056390, guid: f1a10e69597c62c45b4640846b4086e0,
+        type: 3}
+      propertyPath: m_Text
+      value: $4K
+      objectReference: {fileID: 0}
+    - target: {fileID: 628004612283056390, guid: f1a10e69597c62c45b4640846b4086e0,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 628004612702139628, guid: f1a10e69597c62c45b4640846b4086e0,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

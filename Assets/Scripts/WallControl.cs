@@ -23,6 +23,16 @@ public class WallControl : MonoBehaviour
             {
                 cam.GetComponent<CameraController>().s2 = true;
             }
+
+            if (count == 7)
+            {
+                cam.GetComponent<CameraController>().s3 = true;
+            }
+
+            if (count == 11)
+            {
+                cam.GetComponent<CameraController>().s4 = true;
+            }
             Destroy(Fog);
             Destroy(gameObject);
         }
