@@ -144,38 +144,19 @@ public class AIController : MonoBehaviour
                 //objDist = true;
             }
             gameObject.GetComponent<Animator>().SetBool("isWorking",true);
-            if (stackSize > 0)
-            {
-                if (Vector3.Distance(gameObject.GetComponent<NavMeshAgent>().destination, gameObject.transform.position) <
-                    1)
-                {
-                    gameObject.GetComponent<Animator>().SetBool("idle",true);
-                    gameObject.GetComponent<Animator>().SetBool("runWMoney",false);
-                    gameObject.GetComponent<Animator>().SetBool("run",false);
-                }
-                else
-                {
-                    gameObject.GetComponent<Animator>().SetBool("runWMoney",true);
-                    gameObject.GetComponent<Animator>().SetBool("run",false);
-                    gameObject.GetComponent<Animator>().SetBool("idle",false);
-                }
-            }
-            else
-            {
-                if (Vector3.Distance(gameObject.GetComponent<NavMeshAgent>().destination, gameObject.transform.position) <
-                    1)
+
+            if (Vector3.Distance(gameObject.GetComponent<NavMeshAgent>().destination, gameObject.transform.position) <
+                1)
                 {
                     gameObject.GetComponent<Animator>().SetBool("idle",true);
                     gameObject.GetComponent<Animator>().SetBool("run",false);
-                    gameObject.GetComponent<Animator>().SetBool("runWMoney",false);
                 }
                 else
                 {
                     gameObject.GetComponent<Animator>().SetBool("run",true);
                     gameObject.GetComponent<Animator>().SetBool("idle",false);
-                    gameObject.GetComponent<Animator>().SetBool("runWMoney",false);
                 }
-            }
+            
             stackSize = moneyStack.Count;
             if (objDist)
             {

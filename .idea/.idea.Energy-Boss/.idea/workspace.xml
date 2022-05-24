@@ -53,9 +53,9 @@
       <option value="$PROJECT_DIR$/Assets/Joystick Pack/Examples/JoystickPlayerExample.cs" />
       <option value="$PROJECT_DIR$/Assets/FogControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HireAreaController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/WallControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/AIController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/CameraController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="28T5IZ9rmM4Lh1iUOM4GbSmrHjG" />
@@ -125,7 +125,7 @@
       <workItem from="1653119161472" duration="9217000" />
       <workItem from="1653221905609" duration="2967000" />
       <workItem from="1653309658932" duration="9912000" />
-      <workItem from="1653379425331" duration="2630000" />
+      <workItem from="1653379425331" duration="3112000" />
     </task>
     <servers />
   </component>

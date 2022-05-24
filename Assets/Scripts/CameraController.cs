@@ -88,6 +88,7 @@ public class CameraController : MonoBehaviour
         
         if (s3)
         {
+            Debug.Log("enter");
             if (!s3Flag)
             {
                 s3D += Time.deltaTime * speed; 
@@ -102,7 +103,7 @@ public class CameraController : MonoBehaviour
                 s3Flag = true;
             }
 
-            if (s2D <= 0)
+            if (s3D <= 0)
             {
                 s3 = false;
             }
