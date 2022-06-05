@@ -25,6 +25,7 @@ public class GameManeger : MonoBehaviour
     {
         collectSize = 0;
         countLock = 0;
+        Application.targetFrameRate = 240;
     }
     void Update()
     {
