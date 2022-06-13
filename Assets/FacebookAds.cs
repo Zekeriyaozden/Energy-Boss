@@ -1,8 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Facebook.Unity;
 using UnityEngine;
 
 public class FacebookAds : MonoBehaviour
 {
-    
+    private void Awake()
+    {
+        
+    }
 }

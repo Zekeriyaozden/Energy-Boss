@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedAppIndex: 0
   clientTokens:
-  - c02592f905783a4db4a37ddaff2ecaed
+  - 25473ec29846d4c2af6ce8f06a69385f
   appIds:
-  - 696218638138708
+  - 303189842026854
   appLabels:
-  - EnergyBoss
+  - Energy Boss 3D
   cookie: 1
   logging: 1
   status: 1
